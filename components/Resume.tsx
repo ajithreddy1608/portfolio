@@ -48,7 +48,7 @@ export default function Resume() {
                 <span>Format: 1-Page ATS-Optimized PDF</span>
               </div>
               <h3 className="text-2xl font-bold text-white">
-                Ajith Reddy Katta — Official Resume
+                Katta Ajith Reddy — Official Resume
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed">
                 Complete overview covering third-year B.Tech CSE (AI &amp; ML) at
@@ -117,7 +117,7 @@ export default function Resume() {
                 <div className="flex items-center gap-2">
                   <FileText className="w-5 h-5 text-cyan-400" />
                   <h3 className="text-base font-bold text-white">
-                    Resume Document Snapshot — Ajith Reddy Katta
+                    Resume Document Snapshot — Katta Ajith Reddy
                   </h3>
                 </div>
                 <button
@@ -133,7 +133,7 @@ export default function Resume() {
                 {/* Header */}
                 <div className="p-4 rounded-xl bg-white/[0.03] border border-white/[0.06] text-center space-y-1">
                   <h4 className="text-xl font-bold text-white tracking-wide">
-                    AJITH REDDY KATTA
+                    KATTA AJITH REDDY
                   </h4>
                   <p className="text-cyan-400 font-medium text-xs">
                     Computer Science &amp; Engineering (Artificial Intelligence &amp; Machine Learning)

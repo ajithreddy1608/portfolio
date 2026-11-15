@@ -13,10 +13,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ajithreddy.dev"),
-  title: "Ajith Reddy | Developer | AI & ML Enthusiast | Founder",
+  title: "Katta Ajith Reddy | Developer | AI & ML Enthusiast | Founder",
   description:
-    "Personal portfolio of Ajith Reddy Katta — Computer Science student specializing in Artificial Intelligence and Machine Learning at Aurora Deemed University. Founder of AS – Everything Starts Here & CAVORA DIGITAL.",
+    "Personal portfolio of Katta Ajith Reddy — Computer Science student specializing in Artificial Intelligence and Machine Learning at Aurora Deemed University. Founder of AS – Everything Starts Here & CAVORA DIGITAL.",
   keywords: [
+    "Katta Ajith Reddy",
     "Ajith Reddy",
     "Ajith Reddy Katta",
     "Software Developer",
@@ -28,30 +29,30 @@ export const metadata: Metadata = {
     "Next.js Portfolio",
     "TypeScript Developer",
   ],
-  authors: [{ name: "Ajith Reddy Katta", url: "https://github.com/ajithreddy1608" }],
-  creator: "Ajith Reddy Katta",
+  authors: [{ name: "Katta Ajith Reddy", url: "https://github.com/ajithreddy1608" }],
+  creator: "Katta Ajith Reddy",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://github.com/ajithreddy1608",
-    title: "Ajith Reddy | Developer | AI & ML Enthusiast | Founder",
+    title: "Katta Ajith Reddy | Developer | AI & ML Enthusiast | Founder",
     description:
-      "Hi, I'm Ajith Reddy — Computer Science student specializing in AI & ML, software engineering, and founder of AS – Everything Starts Here & CAVORA DIGITAL.",
-    siteName: "Ajith Reddy Portfolio",
+      "Hi, I'm Katta Ajith Reddy — Computer Science student specializing in AI & ML, software engineering, and founder of AS – Everything Starts Here & CAVORA DIGITAL.",
+    siteName: "Katta Ajith Reddy Portfolio",
     images: [
       {
         url: "/ajith.jpg",
         width: 800,
         height: 1000,
-        alt: "Ajith Reddy Katta - Profile",
+        alt: "Katta Ajith Reddy - Profile",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ajith Reddy | Developer | AI & ML Enthusiast | Founder",
+    title: "Katta Ajith Reddy | Developer | AI & ML Enthusiast | Founder",
     description:
-      "Portfolio of Ajith Reddy Katta — Computer Science student specializing in AI & ML, software engineering, and entrepreneurial initiatives.",
+      "Portfolio of Katta Ajith Reddy — Computer Science student specializing in AI & ML, software engineering, and entrepreneurial initiatives.",
     images: ["/ajith.jpg"],
   },
   icons: {

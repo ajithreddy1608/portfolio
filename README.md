@@ -1,8 +1,8 @@
-# Ajith Reddy — Personal Portfolio Website
+# Katta Ajith Reddy — Personal Portfolio Website
 
 A personal portfolio website engineered with **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, and an **Apple-inspired Liquid Glass (Glisse) UI/UX**.
 
-Designed to professionally represent **Ajith Reddy Katta** — Computer Science student specializing in Artificial Intelligence and Machine Learning at Aurora Deemed University.
+Designed to professionally represent **Katta Ajith Reddy** — Computer Science student specializing in Artificial Intelligence and Machine Learning at Aurora Deemed University.
 
 ---
 
@@ -140,8 +140,8 @@ portfolio/
 
 ## 📄 Personal Information Reference
 
-- **Name**: Ajith Reddy Katta
-- **Display Name**: Ajith Reddy
+- **Name**: Katta Ajith Reddy
+- **Display Name**: Katta Ajith Reddy
 - **Location**: Hyderabad, Telangana, India
 - **Email**: [kattaajithreddy08@gmail.com](mailto:kattaajithreddy08@gmail.com)
 - **Phone**: +91 8555064188

@@ -18,11 +18,11 @@ export default function Footer() {
         {/* Brand & Tagline */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <div className="flex items-center gap-2 mb-1.5">
-            <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-[10px] font-mono font-bold shadow-md">
-              AR
+            <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-[9px] font-mono font-bold shadow-md">
+              KAR
             </div>
             <span className="text-sm font-bold text-white tracking-wide">
-              Ajith Reddy Katta
+              Katta Ajith Reddy
             </span>
           </div>
           <p className="text-xs text-slate-400 max-w-sm">
@@ -74,7 +74,7 @@ export default function Footer() {
 
       <div className="max-w-6xl mx-auto pt-6 mt-6 border-t border-white/[0.05] text-center text-xs text-slate-400">
         <p>
-          &copy; {new Date().getFullYear()} Ajith Reddy Katta. All rights reserved.
+          &copy; {new Date().getFullYear()} Katta Ajith Reddy. All rights reserved.
         </p>
       </div>
     </footer>

@@ -60,7 +60,7 @@ export default function Hero() {
                 <span className="h-px w-8 bg-cyan-400/50" />
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
-                Ajith Reddy
+                Katta Ajith Reddy
               </h1>
               <p className="text-lg sm:text-xl font-semibold bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-300 bg-clip-text text-transparent">
                 Developer | AI &amp; ML Enthusiast | Technology Explorer
@@ -70,7 +70,7 @@ export default function Hero() {
             {/* Professional Introduction Statement */}
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl font-normal">
               Hi, I&apos;m{" "}
-              <strong className="text-white font-medium">Ajith Reddy</strong> — a
+              <strong className="text-white font-medium">Katta Ajith Reddy</strong> — a
               Computer Science student specializing in Artificial Intelligence and
               Machine Learning, passionate about technology, software
               development, intelligent systems and building meaningful digital
@@ -152,7 +152,7 @@ export default function Hero() {
                 <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
                   <Image
                     src="/ajith.jpg"
-                    alt="Ajith Reddy - Software Developer & AI/ML Enthusiast"
+                    alt="Katta Ajith Reddy - Software Developer & AI/ML Enthusiast"
                     fill
                     priority
                     sizes="(max-width: 768px) 100vw, 380px"

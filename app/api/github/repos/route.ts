@@ -63,7 +63,7 @@ export async function GET() {
       {
         headers: {
           Accept: "application/vnd.github.v3+json",
-          "User-Agent": "AjithReddy-Portfolio-App",
+          "User-Agent": "KattaAjithReddy-Portfolio-App",
         },
         next: { revalidate: 3600 },
       }

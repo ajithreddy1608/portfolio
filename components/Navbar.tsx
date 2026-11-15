@@ -81,12 +81,12 @@ export default function Navbar() {
             className="group flex items-center gap-2.5 text-slate-100 font-semibold tracking-tight transition-all duration-200"
           >
             <div className="relative w-8 h-8 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-[0_0_15px_rgba(59,130,246,0.5)] group-hover:scale-105 transition-transform">
-              <span className="text-white text-xs font-bold font-mono">AR</span>
+              <span className="text-white text-[10px] font-bold font-mono">KAR</span>
               <div className="absolute inset-0 rounded-xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
             <div className="flex flex-col">
               <span className="text-sm font-semibold tracking-wide text-white group-hover:text-cyan-400 transition-colors">
-                Ajith Reddy
+                Katta Ajith Reddy
               </span>
               <span className="text-[10px] text-slate-400 font-mono tracking-wider -mt-0.5">
                 PORTFOLIO
