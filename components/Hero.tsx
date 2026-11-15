@@ -183,9 +183,9 @@ export default function Hero() {
                 </div>
 
                 {/* Floating Glass Pill: Focus Pill */}
-                <div className="absolute -top-3 -right-3 px-3 py-1.5 rounded-full bg-slate-900/90 backdrop-blur-md border border-blue-400/40 shadow-lg text-[11px] font-medium text-cyan-300 flex items-center gap-1.5">
+                <div className="absolute -top-3 -right-3 px-3.5 py-1.5 rounded-full bg-slate-900/90 backdrop-blur-md border border-blue-400/40 shadow-[0_0_15px_rgba(59,130,246,0.3)] text-[11px] font-medium text-cyan-300 flex items-center gap-1.5">
                   <Sparkles className="w-3 h-3 text-cyan-400" />
-                  <span>AI &amp; Full Stack</span>
+                  <span>AI, Full Stack &amp; Founder</span>
                 </div>
               </div>
             </div>

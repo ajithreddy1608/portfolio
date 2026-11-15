@@ -2,8 +2,9 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
+import Entrepreneurship from "@/components/Entrepreneurship";
+import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
 import Experience from "@/components/Experience";
@@ -18,8 +19,9 @@ export default function HomePage() {
       <main className="flex-1">
         <Hero />
         <About />
-        <Skills />
         <Projects />
+        <Entrepreneurship />
+        <Skills />
         <Education />
         <Certifications />
         <Experience />
