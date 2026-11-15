@@ -230,14 +230,14 @@ export default function Resume() {
                     <div>
                       <div className="flex justify-between items-baseline mb-1">
                         <span className="font-bold text-white">
-                          Web Development Intern — StaxTech
+                          Artificial Intelligence &amp; Machine Learning Intern — StaxTech
                         </span>
                         <span className="text-slate-400 font-mono">
-                          May 2025 – Jun 2025 (4 weeks)
+                          May 2025 (1 Month)
                         </span>
                       </div>
                       <ul className="list-disc list-inside space-y-1 text-slate-400">
-                        <li>Completed a four-week internship gaining hands-on experience in HTML, CSS, and JavaScript, with a focus on responsive frontend implementation.</li>
+                        <li>Completed intensive 1-month engineering internship focusing on Artificial Intelligence and Machine Learning implementation (Certificate ID: STAXP037).</li>
                       </ul>
                     </div>
                   </div>
@@ -288,11 +288,13 @@ export default function Resume() {
                     <span>Certifications &amp; Workshops</span>
                   </h5>
                   <div className="space-y-1.5 text-slate-300">
+                    <p><strong className="text-white">AI &amp; ML Internship Certificate:</strong> StaxTech (Certificate ID: STAXP037, May 2025)</p>
+                    <p><strong className="text-white">AI/ML &amp; Freelancing Bootcamp:</strong> MentorX, Microsoft MVP &amp; IEEE Young Professionals (May 2025)</p>
                     <p><strong className="text-white">Python Programming:</strong> Microsoft &amp; Skill India Digital Hub (NSDC) — 40 Hours (May 2026)</p>
                     <p><strong className="text-white">Google Generative AI &amp; Antigravity:</strong> Google for Developers &amp; SmartBridge (WS-GAI-2026-1791)</p>
+                    <p><strong className="text-white">AI Tools &amp; ChatGPT Workshop:</strong> be10x (March 2025)</p>
+                    <p><strong className="text-white">Project Management Assessment:</strong> LearnTube.ai (ID: DJA-B-1-1356914-0, June 2025)</p>
                     <p><strong className="text-white">Getting Started with AI:</strong> IBM SkillsBuild (Dec 2025)</p>
-                    <p><strong className="text-white">Web Development Internship Certificate:</strong> StaxTech (2025)</p>
-                    <p><strong className="text-white">Google Cloud AI &amp; GenAI:</strong> Google Cloud Specialization (2025)</p>
                   </div>
                 </div>
 

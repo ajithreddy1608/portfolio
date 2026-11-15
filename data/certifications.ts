@@ -27,6 +27,33 @@ export interface AchievementItem {
 
 export const certificationsData: CertificationItem[] = [
   {
+    id: "staxtech-aiml-cert",
+    title: "Artificial Intelligence & Machine Learning Internship Certificate",
+    issuer: "StaxTech",
+    issueDate: "May 2025",
+    credentialId: "STAXP037",
+    category: "Certification",
+    imageUrl: "/certificates/staxtech-aiml-internship.webp",
+    verificationUrl: "/certificates/staxtech-aiml-internship.pdf",
+    skills: ["Artificial Intelligence", "Machine Learning", "Python", "Data Modeling", "Algorithm Implementation"],
+    description:
+      "Official certificate recognizing completion of a 1-month engineering internship as an Artificial Intelligence/Machine Learning Intern at StaxTech, signed by Pawan Kushwaha, Founder & CEO.",
+    featured: true,
+  },
+  {
+    id: "mentorx-bootcamp",
+    title: "15-Hour LIVE Bootcamp on AI/ML & Freelancing",
+    issuer: "MentorX, Microsoft MVP & IEEE Young Professionals",
+    issueDate: "May 2025",
+    category: "Workshop",
+    imageUrl: "/certificates/mentorx-aiml-freelancing-bootcamp.webp",
+    verificationUrl: "/certificates/mentorx-aiml-freelancing-bootcamp.jpg",
+    skills: ["AI/ML Solutions", "Advanced Prompting", "Generative AI Freelancing", "Client Delivery", "Solution Architecture"],
+    description:
+      "Intensive 15-hour live bootcamp organized by MentorX Community and IEEE Young Professionals under the mentorship of Mr. Abhilekh Verma (Microsoft MVP in AI, Mentor at Microsoft for Startups, IBM, IIT Guwahati & WE Hub).",
+    featured: true,
+  },
+  {
     id: "microsoft-python",
     title: "Python Programming",
     issuer: "Microsoft & Skill India Digital Hub (NSDC)",
@@ -54,6 +81,33 @@ export const certificationsData: CertificationItem[] = [
     featured: true,
   },
   {
+    id: "be10x-ai-tools-cert",
+    title: "AI Tools & ChatGPT Workshop",
+    issuer: "be10x",
+    issueDate: "Mar 2025",
+    category: "Workshop",
+    imageUrl: "/certificates/be10x-ai-tools-workshop.webp",
+    verificationUrl: "/certificates/be10x-ai-tools-workshop.pdf",
+    skills: ["ChatGPT", "AI Productivity", "Rapid Data Analysis", "AI-Augmented Coding", "Presentation Generation"],
+    description:
+      "Verified certificate of completion for be10x AI tools and ChatGPT masterclass. Certified in rapid presentation creation, data analysis, and AI-accelerated code debugging.",
+    featured: true,
+  },
+  {
+    id: "learntube-pm-cert",
+    title: "Project Management Assessment",
+    issuer: "LearnTube.ai",
+    issueDate: "Jun 2025",
+    credentialId: "DJA-B-1-1356914-0",
+    category: "Certification",
+    imageUrl: "/certificates/learntube-project-management.webp",
+    verificationUrl: "/certificates/learntube-project-management.jpg",
+    skills: ["Project Management", "Agile Execution", "Workflow Optimization", "Task Prioritization", "Delivery Management"],
+    description:
+      "Official certificate of completion for passing the Project Management Assessment by LearnTube.ai, signed by Co-founders Shronit Ladhani & Gargi Ruparelia.",
+    featured: true,
+  },
+  {
     id: "sashverse-internship-cert",
     title: "Digital Marketing Internship Completion Certificate",
     issuer: "Sashverse Technologies Pvt. Ltd.",
@@ -75,17 +129,6 @@ export const certificationsData: CertificationItem[] = [
     skills: ["Artificial Intelligence", "Machine Learning Foundations", "Ethics in AI", "AI Systems"],
     description:
       "Comprehensive certification covering foundational artificial intelligence concepts, cognitive technologies, machine learning paradigms, and ethical frameworks in computing.",
-    featured: true,
-  },
-  {
-    id: "staxtech-web-cert",
-    title: "Web Development Internship Certificate",
-    issuer: "StaxTech",
-    issueDate: "Jun 2025",
-    category: "Certification",
-    skills: ["HTML5", "CSS3", "JavaScript", "Frontend Development", "Responsive Design"],
-    description:
-      "Official certificate recognizing completion of a 4-week web development internship with practical hands-on experience in building modern responsive web interfaces.",
     featured: true,
   },
   {
@@ -133,17 +176,6 @@ export const certificationsData: CertificationItem[] = [
     skills: ["Python", "AI Integration", "Automated Scripting", "Developer Productivity"],
     description:
       "Hands-on workshop exploring AI-augmented Python programming, code synthesis, debugging workflows, and intelligent script automation.",
-    featured: false,
-  },
-  {
-    id: "ai-tools-workshop",
-    title: "AI Tools Workshop",
-    issuer: "be10x",
-    issueDate: "2025",
-    category: "Workshop",
-    skills: ["AI Tooling", "Workflow Automation", "Productivity Acceleration", "Prompt Design"],
-    description:
-      "Accelerated workshop on deploying cutting-edge AI tools to streamline technical tasks, automate workflows, and boost engineering productivity.",
     featured: false,
   },
 ];
