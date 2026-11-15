@@ -9,6 +9,8 @@ export interface ExperienceItem {
   responsibilities: string[];
   skills: string[];
   description: string;
+  certificateImageUrl?: string;
+  certificatePdfUrl?: string;
 }
 
 export const experienceData: ExperienceItem[] = [
@@ -20,12 +22,15 @@ export const experienceData: ExperienceItem[] = [
     duration: "17 Apr 2026 – 26 Jun 2026",
     location: "Hyderabad, Telangana, India",
     performanceRating: "Very Good",
+    certificateImageUrl: "/certificates/sashverse-internship-certificate.webp",
+    certificatePdfUrl: "/certificates/sashverse-internship-certificate.pdf",
     description:
       "Contributed to live digital marketing campaigns, content generation, and brand visibility initiatives across cross-functional teams adhering to Agile and SDLC methodologies.",
     responsibilities: [
       "Worked on live campaigns across SEO, social media, email, and content marketing; assisted in planning, executing, and optimizing strategies.",
       "Contributed to brand awareness, audience engagement, and lead generation; created social media content, blogs, and marketing materials.",
       "Collaborated with content, design, and development teams following Agile and SDLC practices.",
+      "Maintained brand consistency across blogs, social media channels, and campaign collateral.",
     ],
     skills: [
       "SEO",
@@ -44,6 +49,8 @@ export const experienceData: ExperienceItem[] = [
     type: "Internship",
     duration: "May 2025 – Jun 2025 (4 weeks)",
     location: "Hyderabad, Telangana, India",
+    certificateImageUrl: undefined,
+    certificatePdfUrl: undefined,
     description:
       "Four-week immersive engineering internship focused on modern web fundamentals, responsive interfaces, and client-side web application programming.",
     responsibilities: [

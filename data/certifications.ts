@@ -21,9 +21,51 @@ export interface AchievementItem {
   description: string;
   highlights: string[];
   category: "Innovation & Competition" | "Entrepreneurship";
+  imageUrl?: string;
+  certificateUrl?: string;
 }
 
 export const certificationsData: CertificationItem[] = [
+  {
+    id: "microsoft-python",
+    title: "Python Programming",
+    issuer: "Microsoft & Skill India Digital Hub (NSDC)",
+    issueDate: "May 2026",
+    category: "Certification",
+    imageUrl: "/certificates/python-programming-microsoft.webp",
+    verificationUrl: "/certificates/python-programming-microsoft.pdf",
+    skills: ["Python", "OOP", "Data Structures", "Algorithms", "Software Development"],
+    description:
+      "Official 40-hour Python Programming certification offered by Microsoft through the Skill India Digital Hub (NSDC), authorized by Manju Dhasmana, India Senior Director, CSR, Microsoft.",
+    featured: true,
+  },
+  {
+    id: "google-genai-antigravity",
+    title: "Google Generative AI Foundations & Antigravity Workshop",
+    issuer: "Google for Developers & SmartBridge",
+    issueDate: "Sep 2026",
+    credentialId: "WS-GAI-2026-1791",
+    category: "Workshop",
+    imageUrl: "/certificates/google-generative-ai-smartbridge.webp",
+    verificationUrl: "/certificates/google-generative-ai-smartbridge.pdf",
+    skills: ["Generative AI", "Vertex AI", "Prompt Design", "Google Antigravity", "LLM Workflows", "AI Agents"],
+    description:
+      "Intensive workshop conducted by SmartBridge in partnership with Google for Developers. Demonstrated active participation and mastery in Generative AI, Prompt Design in Vertex AI, and Google Antigravity.",
+    featured: true,
+  },
+  {
+    id: "sashverse-internship-cert",
+    title: "Digital Marketing Internship Completion Certificate",
+    issuer: "Sashverse Technologies Pvt. Ltd.",
+    issueDate: "Jun 2026",
+    category: "Certification",
+    imageUrl: "/certificates/sashverse-internship-certificate.webp",
+    verificationUrl: "/certificates/sashverse-internship-certificate.pdf",
+    skills: ["SEO", "Social Media Marketing", "Email Campaigns", "Content Strategy", "Agile & SDLC", "Lead Generation"],
+    description:
+      "Official certificate of completion for full-time Digital Marketing Internship. Recognized for outstanding performance ('Very Good' rating) across SEO, campaign management, and cross-functional Agile execution.",
+    featured: true,
+  },
   {
     id: "ibm-skillsbuild-ai",
     title: "Getting Started with Artificial Intelligence",
@@ -39,7 +81,7 @@ export const certificationsData: CertificationItem[] = [
     id: "staxtech-web-cert",
     title: "Web Development Internship Certificate",
     issuer: "StaxTech",
-    issueDate: "2025",
+    issueDate: "Jun 2025",
     category: "Certification",
     skills: ["HTML5", "CSS3", "JavaScript", "Frontend Development", "Responsive Design"],
     description:
@@ -58,6 +100,20 @@ export const certificationsData: CertificationItem[] = [
     featured: true,
   },
   {
+    id: "coursera-public-speaking",
+    title: "Introduction to Public Speaking",
+    issuer: "University of Washington (via Coursera)",
+    credentialId: "EXX2CLZ2RH3Y",
+    verificationUrl: "https://www.coursera.org/account/accomplishments/verify/EXX2CLZ2RH3Y",
+    imageUrl:
+      "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~EXX2CLZ2RH3Y/CERTIFICATE_LANDING_PAGE~EXX2CLZ2RH3Y.jpeg",
+    skills: ["Effective Communication", "Audience Analysis", "Speech Structuring", "Technical Presentation"],
+    description:
+      "Verified mastery of dynamic verbal communication, speech structuring, audience engagement, and confident technical presentation through the University of Washington.",
+    featured: true,
+    category: "Certification",
+  },
+  {
     id: "three-day-genai-workshop",
     title: "3-Day Generative AI Workshop",
     issuer: "Industry AI Masterclass",
@@ -66,7 +122,7 @@ export const certificationsData: CertificationItem[] = [
     skills: ["AI/ML Fundamentals", "LLMs", "RAG (Retrieval-Augmented Generation)", "Prompt Engineering", "Responsible AI"],
     description:
       "Intensive 3-day technical workshop exploring state-of-the-art Generative AI pipelines, architectural principles of RAG, prompt tuning strategies, and ethical AI deployment.",
-    featured: true,
+    featured: false,
   },
   {
     id: "python-using-ai-workshop",
@@ -90,23 +146,60 @@ export const certificationsData: CertificationItem[] = [
       "Accelerated workshop on deploying cutting-edge AI tools to streamline technical tasks, automate workflows, and boost engineering productivity.",
     featured: false,
   },
-  {
-    id: "coursera-public-speaking",
-    title: "Introduction to Public Speaking",
-    issuer: "University of Washington (via Coursera)",
-    credentialId: "EXX2CLZ2RH3Y",
-    verificationUrl: "https://www.coursera.org/account/accomplishments/verify/EXX2CLZ2RH3Y",
-    imageUrl:
-      "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~EXX2CLZ2RH3Y/CERTIFICATE_LANDING_PAGE~EXX2CLZ2RH3Y.jpeg",
-    skills: ["Effective Communication", "Audience Analysis", "Speech Structuring", "Technical Presentation"],
-    description:
-      "Verified mastery of dynamic verbal communication, speech structuring, audience engagement, and confident technical presentation through the University of Washington.",
-    featured: true,
-    category: "Certification",
-  },
 ];
 
 export const achievementsData: AchievementItem[] = [
+  {
+    id: "hackwithhyderabad",
+    title: "HackWithHyderabad Hackathon",
+    organization: "HackWithIndia & Devnovate (at Microsoft Office, Hyderabad)",
+    year: "2026",
+    role: "In-Person Hackathon Innovator",
+    category: "Innovation & Competition",
+    imageUrl: "/certificates/hackwithhyderabad-microsoft.webp",
+    certificateUrl: "/certificates/hackwithhyderabad-microsoft.jpg",
+    description:
+      "Actively participated in the prestigious in-person HackWithHyderabad Hackathon held at Microsoft Office, Hyderabad. Recognized for creativity, collaborative problem-solving, and building tech solutions in the true spirit of innovation.",
+    highlights: [
+      "Competed in-person at Microsoft Office campus, Hyderabad",
+      "Engineered collaborative technology solutions under intense hackathon timeframe",
+      "Official Certificate of Participation signed by Aviral Bhardwaj, Founder, HackWithIndia",
+    ],
+  },
+  {
+    id: "vibe-with-india",
+    title: "Vibe With India 2.0 (Virtual Hackathon)",
+    organization: "HackWithIndia & Devnovate (CertifyHub)",
+    year: "March 2026",
+    role: "Virtual Hackathon Participant & Developer",
+    category: "Innovation & Competition",
+    imageUrl: "/certificates/vibe-with-india-hackathon.webp",
+    certificateUrl: "/certificates/vibe-with-india-hackathon.pdf",
+    description:
+      "Showcased technical dedication, agile development, and inventive execution in the national Virtual Hackathon VIBE WITH INDIA held on 20th March 2026.",
+    highlights: [
+      "Engineered technical solutions in a fast-paced nationwide virtual competition",
+      "Demonstrated agility, problem-solving, and cross-functional execution",
+      "Officially issued by HackWithIndia and Devnovate CertifyHub",
+    ],
+  },
+  {
+    id: "ignite-india-venture",
+    title: "Ignite India Program — Certified Practice Venture",
+    organization: "Wadhwani Global Entrepreneur & Aurora Higher Education Academy",
+    year: "Dec 2025",
+    role: "Venture Creator & Entrepreneurial Fellow",
+    category: "Entrepreneurship",
+    imageUrl: "/certificates/ignite-india-wadhwani.webp",
+    certificateUrl: "/certificates/ignite-india-wadhwani.pdf",
+    description:
+      "Successfully graduated from the intensive 42-hour Ignite India entrepreneurial program by Wadhwani Global Entrepreneur, developing a Certified Practice Venture recognized for excellence and real-world impact.",
+    highlights: [
+      "Completed 42 hours of rigorous venture building and market validation training",
+      "Developed a Certified Practice Venture recognized for excellence and real-world impact",
+      "Honored with Certificate of Proficiency signed by Meetul Patel, President, Wadhwani Global Entrepreneur",
+    ],
+  },
   {
     id: "loreal-brandstorm",
     title: "L'Oréal Brandstorm 2026",

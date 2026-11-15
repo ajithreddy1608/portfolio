@@ -281,15 +281,33 @@ export default function Resume() {
                   </div>
                 </div>
 
+                {/* Certifications & Workshops */}
+                <div>
+                  <h5 className="font-semibold text-white uppercase tracking-wider mb-2 border-b border-white/10 pb-1 flex items-center gap-1.5">
+                    <Award className="w-4 h-4 text-cyan-400" />
+                    <span>Certifications &amp; Workshops</span>
+                  </h5>
+                  <div className="space-y-1.5 text-slate-300">
+                    <p><strong className="text-white">Python Programming:</strong> Microsoft &amp; Skill India Digital Hub (NSDC) — 40 Hours (May 2026)</p>
+                    <p><strong className="text-white">Google Generative AI &amp; Antigravity:</strong> Google for Developers &amp; SmartBridge (WS-GAI-2026-1791)</p>
+                    <p><strong className="text-white">Getting Started with AI:</strong> IBM SkillsBuild (Dec 2025)</p>
+                    <p><strong className="text-white">Web Development Internship Certificate:</strong> StaxTech (2025)</p>
+                    <p><strong className="text-white">Google Cloud AI &amp; GenAI:</strong> Google Cloud Specialization (2025)</p>
+                  </div>
+                </div>
+
                 {/* Achievements & Soft Skills */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                   <div>
                     <h5 className="font-semibold text-white uppercase tracking-wider mb-1 border-b border-white/10 pb-1">
-                      Achievements &amp; Entrepreneurship
+                      Achievements &amp; Hackathons
                     </h5>
                     <ul className="space-y-1 text-slate-400">
-                      <li>• <strong>L&apos;Oréal Brandstorm 2026</strong> – Innovation &amp; creative problem-solving.</li>
-                      <li>• <strong>FreshBite Box</strong> – Fruit delivery concept, market research &amp; pricing.</li>
+                      <li>• <strong>HackWithHyderabad</strong> – In-person Hackathon at Microsoft Office, Hyderabad.</li>
+                      <li>• <strong>Vibe With India 2.0</strong> – National Virtual Hackathon (HackWithIndia).</li>
+                      <li>• <strong>Ignite India Program</strong> – Certified Practice Venture (Wadhwani Global Entrepreneur, 42h).</li>
+                      <li>• <strong>L&apos;Oréal Brandstorm 2026</strong> – Tech innovation &amp; creative problem-solving.</li>
+                      <li>• <strong>FreshBite Box</strong> – Fruit delivery concept, business model &amp; pricing.</li>
                     </ul>
                   </div>
                   <div>
