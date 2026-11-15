@@ -202,7 +202,7 @@ export default function Contact() {
                   Location
                 </div>
                 <div className="text-sm font-semibold text-white">
-                  Andhra Pradesh, India
+                  Hyderabad, Telangana, India
                 </div>
               </div>
             </div>

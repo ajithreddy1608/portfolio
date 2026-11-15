@@ -18,7 +18,7 @@ export const educationHistory: EducationEntry[] = [
     specialization: "Artificial Intelligence and Machine Learning (CSE-AIML)",
     period: "2024 – 2028",
     statusBadge: "Currently 3rd Year",
-    location: "Hyderabad, India",
+    location: "Hyderabad, Telangana, India",
     description:
       "Pursuing an intensive undergraduate engineering curriculum emphasizing modern software engineering, artificial intelligence algorithms, computer vision pipelines, deep learning architectures, and scalable computing systems.",
     relevantSubjects: [
@@ -43,7 +43,7 @@ export const educationHistory: EducationEntry[] = [
     degree: "Intermediate Education (Class XI & XII)",
     period: "2024",
     score: "86%",
-    location: "Hyderabad, India",
+    location: "Hyderabad, Telangana, India",
     description:
       "Rigorous pre-university academic curriculum focusing on Mathematics, Physics, and Chemistry, establishing strong foundational analytical and problem-solving capabilities.",
   },
@@ -52,7 +52,7 @@ export const educationHistory: EducationEntry[] = [
     degree: "Secondary School Certificate (SSC)",
     period: "2022",
     score: "90%",
-    location: "Hyderabad, India",
+    location: "Hyderabad, Telangana, India",
     description:
       "Completed foundational schooling with academic excellence (90%), participating in mathematics olympiads and science exhibitions.",
   },

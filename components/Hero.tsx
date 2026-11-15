@@ -49,7 +49,7 @@ export default function Hero() {
 
               <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/[0.08] text-slate-300 text-xs">
                 <MapPin className="w-3.5 h-3.5 text-cyan-400" />
-                <span>Andhra Pradesh, India</span>
+                <span>Hyderabad, Telangana, India</span>
               </div>
             </div>
 

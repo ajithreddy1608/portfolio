@@ -18,7 +18,7 @@ export const experienceData: ExperienceItem[] = [
     role: "Digital Marketing Intern",
     type: "Internship",
     duration: "17 Apr 2026 – 26 Jun 2026",
-    location: "Hyderabad, India",
+    location: "Hyderabad, Telangana, India",
     performanceRating: "Very Good",
     description:
       "Contributed to live digital marketing campaigns, content generation, and brand visibility initiatives across cross-functional teams adhering to Agile and SDLC methodologies.",
@@ -43,7 +43,7 @@ export const experienceData: ExperienceItem[] = [
     role: "Web Development Intern",
     type: "Internship",
     duration: "May 2025 – Jun 2025 (4 weeks)",
-    location: "Hyderabad, India",
+    location: "Hyderabad, Telangana, India",
     description:
       "Four-week immersive engineering internship focused on modern web fundamentals, responsive interfaces, and client-side web application programming.",
     responsibilities: [

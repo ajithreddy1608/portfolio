@@ -142,7 +142,7 @@ portfolio/
 
 - **Name**: Ajith Reddy Katta
 - **Display Name**: Ajith Reddy
-- **Location**: Andhra Pradesh, India
+- **Location**: Hyderabad, Telangana, India
 - **Email**: [kattaajithreddy08@gmail.com](mailto:kattaajithreddy08@gmail.com)
 - **Phone**: +91 8555064188
 - **GitHub**: [github.com/ajithreddy1608](https://github.com/ajithreddy1608)

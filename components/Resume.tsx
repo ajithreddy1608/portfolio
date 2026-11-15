@@ -139,7 +139,7 @@ export default function Resume() {
                     Computer Science &amp; Engineering (Artificial Intelligence &amp; Machine Learning)
                   </p>
                   <p className="text-slate-400 font-mono text-[11px]">
-                    Hyderabad, India • +91-8555064188 • kattaajithreddy08@gmail.com
+                    Hyderabad, Telangana, India • +91-8555064188 • kattaajithreddy08@gmail.com
                   </p>
                 </div>
 
