@@ -45,6 +45,16 @@ body {
   background: rgba(59, 130, 246, 0.55);
 }
 
+/* Custom Minimal Cursor Rules (Desktop Only) */
+@media (hover: hover) and (pointer: fine) {
+  body, a, button, [role="button"], .liquid-card, .interactive-hover {
+    cursor: none !important;
+  }
+  input, textarea, select {
+    cursor: text !important;
+  }
+}
+
 /* =========================================================================
    Apple-Inspired Liquid Glass UI / Glisse Utilities
    ========================================================================= */
