@@ -21,7 +21,7 @@ Designed to professionally represent **Katta Ajith Reddy** — Computer Science 
   - **CineVerse**: Cinematic media exploration and discovery experience.
   - **Live GitHub Repositories Explorer**: Synchronized via Next.js API route (`/api/github/repos`) to explore all public repositories with real-time search.
 - **Section 05: Academic Journey**: Aurora Deemed University (B.Tech in CSE-AIML, 3rd Year, Section 3C) with relevant technical coursework and laboratory projects.
-- **Section 06: Certifications & Achievements**: Verified Coursera credential for *Introduction to Public Speaking* from the University of Washington (Credential ID: `EXX2CLZ2RH3Y`) with one-click verification and credential image preview.
+- **Section 06: Certifications & Achievements**: Verified industry credentials and workshops from Microsoft & Skill India, StaxTech AI/ML Internship, Google for Developers & SmartBridge (Generative AI & Antigravity), MentorX & IEEE (Microsoft MVP in AI), be10x, and LearnTube.ai, alongside national hackathons (HackWithHyderabad, Vibe With India 2.0) and venture credentials (Wadhwani Global Entrepreneur).
 - **Section 07: Professional Experience**: Digital Marketing Internship at Sashverse Technologies Pvt. Ltd. (*Workverse*), detailing core responsibilities and deliverables.
 - **Section 08: Resume / CV**: Downloadable PDF link (`public/Ajith-Reddy-Resume.pdf`) and interactive summary preview modal.
 - **Section 09: Contact**: Direct communication channels (email, phone, LinkedIn, GitHub) and a validated message interface.

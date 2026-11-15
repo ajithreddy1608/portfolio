@@ -121,17 +121,6 @@ export const certificationsData: CertificationItem[] = [
     featured: true,
   },
   {
-    id: "ibm-skillsbuild-ai",
-    title: "Getting Started with Artificial Intelligence",
-    issuer: "IBM SkillsBuild",
-    issueDate: "Dec 2025",
-    category: "Certification",
-    skills: ["Artificial Intelligence", "Machine Learning Foundations", "Ethics in AI", "AI Systems"],
-    description:
-      "Comprehensive certification covering foundational artificial intelligence concepts, cognitive technologies, machine learning paradigms, and ethical frameworks in computing.",
-    featured: true,
-  },
-  {
     id: "google-genai-cloud",
     title: "Google Generative AI & Google Cloud AI Learning",
     issuer: "Google Cloud",
@@ -141,20 +130,6 @@ export const certificationsData: CertificationItem[] = [
     description:
       "Specialized learning path mastering Google's modern AI ecosystem: Intro to Generative AI, Large Language Models (LLMs), Prompt Design in Agent Platform, and Responsible AI implementation on Google Cloud.",
     featured: true,
-  },
-  {
-    id: "coursera-public-speaking",
-    title: "Introduction to Public Speaking",
-    issuer: "University of Washington (via Coursera)",
-    credentialId: "EXX2CLZ2RH3Y",
-    verificationUrl: "https://www.coursera.org/account/accomplishments/verify/EXX2CLZ2RH3Y",
-    imageUrl:
-      "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~EXX2CLZ2RH3Y/CERTIFICATE_LANDING_PAGE~EXX2CLZ2RH3Y.jpeg",
-    skills: ["Effective Communication", "Audience Analysis", "Speech Structuring", "Technical Presentation"],
-    description:
-      "Verified mastery of dynamic verbal communication, speech structuring, audience engagement, and confident technical presentation through the University of Washington.",
-    featured: true,
-    category: "Certification",
   },
   {
     id: "three-day-genai-workshop",

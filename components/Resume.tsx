@@ -294,7 +294,6 @@ export default function Resume() {
                     <p><strong className="text-white">Google Generative AI &amp; Antigravity:</strong> Google for Developers &amp; SmartBridge (WS-GAI-2026-1791)</p>
                     <p><strong className="text-white">AI Tools &amp; ChatGPT Workshop:</strong> be10x (March 2025)</p>
                     <p><strong className="text-white">Project Management Assessment:</strong> LearnTube.ai (ID: DJA-B-1-1356914-0, June 2025)</p>
-                    <p><strong className="text-white">Getting Started with AI:</strong> IBM SkillsBuild (Dec 2025)</p>
                   </div>
                 </div>
 
