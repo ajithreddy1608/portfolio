@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { skillCategories, SkillCategory } from "@/data/skills";
+import { skillCategories, softSkills, languagesList } from "@/data/skills";
 import {
   Code2,
   Globe,
@@ -10,6 +10,8 @@ import {
   Sparkles,
   Layers,
   CheckCircle,
+  Languages,
+  Lightbulb,
 } from "lucide-react";
 
 const ICON_MAP: Record<string, React.ElementType> = {
@@ -39,11 +41,11 @@ export default function Skills() {
             <span>Section 03 // Capabilities</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-4">
-            Technical Skills
+            Technical Skills &amp; Proficiencies
           </h2>
           <p className="text-slate-400 text-sm sm:text-base max-w-xl">
-            Practical toolchains and technical proficiencies developed through
-            coursework, independent software engineering, and AI projects.
+            Practical skills verified across software engineering, AI/ML models,
+            Generative AI architectures, and live digital marketing campaigns.
           </p>
           <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full mt-4" />
         </div>
@@ -58,7 +60,7 @@ export default function Skills() {
                 : "bg-white/[0.04] text-slate-400 hover:text-white hover:bg-white/[0.08] border border-white/[0.08]"
             }`}
           >
-            All Skills ({skillCategories.reduce((acc, c) => acc + c.skills.length, 0)})
+            All Disciplines ({skillCategories.reduce((acc, c) => acc + c.skills.length, 0)})
           </button>
           {skillCategories.map((category, idx) => (
             <button
@@ -67,7 +69,7 @@ export default function Skills() {
               className={`px-4 py-2 rounded-xl text-xs font-medium transition-all duration-200 ${
                 activeTab === idx
                   ? "bg-blue-600 text-white shadow-[0_0_15px_rgba(59,130,246,0.4)] border border-blue-400/30"
-                  : "bg-white/[0.04] text-slate-400 hover:text-white hover:bg-white/[0.08] border border-white/[0.08]"
+                : "bg-white/[0.04] text-slate-400 hover:text-white hover:bg-white/[0.08] border border-white/[0.08]"
               }`}
             >
               {category.title}
@@ -76,13 +78,13 @@ export default function Skills() {
         </div>
 
         {/* Skill Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           {filteredCategories.map((category) => {
             const Icon = ICON_MAP[category.iconName] || Code2;
             return (
               <div
                 key={category.title}
-                className="liquid-card p-6 sm:p-7 flex flex-col justify-between"
+                className="liquid-card p-6 flex flex-col justify-between"
               >
                 <div>
                   {/* Card Header */}
@@ -94,7 +96,7 @@ export default function Skills() {
                       <h3 className="text-base font-semibold text-white">
                         {category.title}
                       </h3>
-                      <p className="text-xs text-slate-400">
+                      <p className="text-xs text-slate-400 line-clamp-1">
                         {category.description}
                       </p>
                     </div>
@@ -123,11 +125,59 @@ export default function Skills() {
 
                 <div className="mt-5 pt-3 border-t border-white/[0.05] flex items-center justify-between text-[11px] text-slate-400">
                   <span className="font-mono">{category.skills.length} competencies</span>
-                  <span className="text-cyan-400/70">Verified by projects</span>
+                  <span className="text-cyan-400/70">Verified in resume</span>
                 </div>
               </div>
             );
           })}
+        </div>
+
+        {/* Soft Skills & Languages Glass Bar */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+          {/* Soft Skills */}
+          <div className="md:col-span-8 liquid-card p-6 border-white/10">
+            <div className="flex items-center gap-2.5 mb-3 text-cyan-300">
+              <Lightbulb className="w-4 h-4" />
+              <h4 className="text-xs font-semibold text-white uppercase tracking-wider">
+                Soft Skills &amp; Interpersonal Strengths
+              </h4>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {softSkills.map((skill) => (
+                <span
+                  key={skill}
+                  className="px-3 py-1.5 rounded-xl bg-white/[0.04] border border-white/[0.08] text-xs text-slate-200"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Languages */}
+          <div className="md:col-span-4 liquid-card p-6 border-white/10 flex flex-col justify-between">
+            <div>
+              <div className="flex items-center gap-2.5 mb-3 text-blue-400">
+                <Languages className="w-4 h-4" />
+                <h4 className="text-xs font-semibold text-white uppercase tracking-wider">
+                  Languages
+                </h4>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {languagesList.map((lang) => (
+                  <span
+                    key={lang}
+                    className="px-3 py-1.5 rounded-xl bg-blue-500/10 border border-blue-500/20 text-xs font-mono text-cyan-300"
+                  >
+                    {lang}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <p className="text-[11px] text-slate-400 mt-3 font-mono">
+              Professional &amp; native fluency
+            </p>
+          </div>
         </div>
       </div>
     </section>

@@ -1,11 +1,11 @@
 export interface ExperienceItem {
   id: string;
   company: string;
-  product?: string;
   role: string;
   type: string;
   duration: string;
-  location?: string;
+  location: string;
+  performanceRating?: string;
   responsibilities: string[];
   skills: string[];
   description: string;
@@ -13,33 +13,51 @@ export interface ExperienceItem {
 
 export const experienceData: ExperienceItem[] = [
   {
-    id: "sashverse-workverse",
+    id: "sashverse-technologies",
     company: "Sashverse Technologies Pvt. Ltd.",
-    product: "Workverse",
     role: "Digital Marketing Intern",
     type: "Internship",
-    duration: "17 April 2026 – 26 June 2026",
-    location: "India",
+    duration: "17 Apr 2026 – 26 Jun 2026",
+    location: "Hyderabad, India",
+    performanceRating: "Very Good",
     description:
-      "Selected as a Digital Marketing Intern for the Workverse platform product team, orchestrating end-to-end digital outreach, audience research, multi-channel marketing campaigns, and visual asset production.",
+      "Contributed to live digital marketing campaigns, content generation, and brand visibility initiatives across cross-functional teams adhering to Agile and SDLC methodologies.",
     responsibilities: [
-      "Social media channel management and audience engagement strategies.",
-      "Instagram content creation, brand storytelling, and interactive reels production.",
-      "Digital marketing strategy planning, metrics evaluation, and campaign iteration.",
-      "Promotional poster, motion graphic, and visual media creation for product features.",
-      "Targeted email marketing planning, subscriber segmentation, and campaign drafts.",
-      "In-depth market research and competitive analysis in the product sector.",
-      "Potential client identification, lead qualification, and digital outreach.",
-      "Execution of multi-channel digital marketing and conversion-focused activities.",
+      "Worked on live campaigns across SEO, social media, email, and content marketing; assisted in planning, executing, and optimizing strategies.",
+      "Contributed to brand awareness, audience engagement, and lead generation; created social media content, blogs, and marketing materials.",
+      "Collaborated with content, design, and development teams following Agile and SDLC practices.",
     ],
     skills: [
-      "Digital Marketing",
-      "Market Research",
-      "Content Creation",
-      "Social Media Management",
+      "SEO",
+      "Social Media Marketing",
       "Email Marketing",
-      "Campaign Planning",
-      "Client Research",
+      "Content Strategy",
+      "Agile & SDLC",
+      "Lead Generation",
+      "Brand Awareness",
+    ],
+  },
+  {
+    id: "staxtech-web-intern",
+    company: "StaxTech",
+    role: "Web Development Intern",
+    type: "Internship",
+    duration: "May 2025 – Jun 2025 (4 weeks)",
+    location: "Hyderabad, India",
+    description:
+      "Four-week immersive engineering internship focused on modern web fundamentals, responsive interfaces, and client-side web application programming.",
+    responsibilities: [
+      "Completed a four-week internship gaining hands-on experience in HTML, CSS, and JavaScript.",
+      "Focused on responsive frontend implementation across various viewport sizes and browser engines.",
+      "Implemented interactive UI components and optimized client-side rendering.",
+    ],
+    skills: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Responsive Web Design",
+      "Frontend Engineering",
+      "Cross-Browser Compatibility",
     ],
   },
 ];

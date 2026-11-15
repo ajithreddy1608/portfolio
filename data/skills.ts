@@ -5,61 +5,84 @@ export interface SkillCategory {
   skills: {
     name: string;
     level?: string;
-    icon?: string;
   }[];
 }
 
 export const skillCategories: SkillCategory[] = [
   {
     title: "Programming Languages",
-    description: "Core languages for systems, algorithms, and application engineering.",
+    description: "Core languages for algorithms, software systems, and data manipulation.",
     iconName: "Code2",
     skills: [
       { name: "Python", level: "Advanced" },
       { name: "C", level: "Proficient" },
       { name: "JavaScript", level: "Advanced" },
-      { name: "TypeScript", level: "Proficient" },
     ],
   },
   {
     title: "Web Development",
-    description: "Modern frontend and full-stack web technologies and responsive design.",
+    description: "Responsive frontend engineering, modern styling, and cloud deployment.",
     iconName: "Globe",
     skills: [
-      { name: "React", level: "Advanced" },
-      { name: "Next.js", level: "Proficient" },
-      { name: "HTML5", level: "Expert" },
-      { name: "CSS3", level: "Advanced" },
-      { name: "Tailwind CSS", level: "Advanced" },
-      { name: "Responsive Web Design", level: "Expert" },
+      { name: "HTML", level: "Expert" },
+      { name: "CSS", level: "Advanced" },
+      { name: "JavaScript", level: "Advanced" },
+      { name: "Responsive Web Development", level: "Expert" },
+      { name: "Vercel (deployment)", level: "Proficient" },
     ],
   },
   {
     title: "AI & Machine Learning",
-    description: "Deep neural networks, computer vision, and intelligent data systems.",
+    description: "Foundational AI algorithms, supervised/unsupervised learning, and neural networks.",
     iconName: "Cpu",
     skills: [
       { name: "Artificial Intelligence", level: "Proficient" },
       { name: "Machine Learning", level: "Proficient" },
       { name: "Deep Learning", level: "Proficient" },
-      { name: "Convolutional Neural Networks (CNN)", level: "Proficient" },
-      { name: "Computer Vision", level: "Proficient" },
-      { name: "Generative AI", level: "Intermediate" },
+    ],
+  },
+  {
+    title: "Generative AI",
+    description: "Large Language Models, semantic search, prompt architecture, and responsible AI.",
+    iconName: "Sparkles",
+    skills: [
+      { name: "LLMs", level: "Proficient" },
+      { name: "Retrieval-Augmented Generation (RAG)", level: "Proficient" },
+      { name: "Prompt Engineering", level: "Advanced" },
+      { name: "Responsible AI", level: "Proficient" },
     ],
   },
   {
     title: "Tools & Ecosystem",
-    description: "Engineering toolchain, data science libraries, and cloud deployment.",
+    description: "Version control, code environments, and computational notebooks.",
     iconName: "Wrench",
     skills: [
       { name: "Git", level: "Proficient" },
       { name: "GitHub", level: "Proficient" },
       { name: "VS Code", level: "Expert" },
-      { name: "JupyterLab", level: "Advanced" },
-      { name: "NumPy", level: "Advanced" },
-      { name: "Matplotlib", level: "Proficient" },
-      { name: "OpenCV", level: "Proficient" },
-      { name: "Vercel", level: "Proficient" },
+      { name: "Jupyter Notebook", level: "Advanced" },
+    ],
+  },
+  {
+    title: "Digital Marketing",
+    description: "Growth campaigns, search optimization, and strategic content distribution.",
+    iconName: "Layers",
+    skills: [
+      { name: "SEO", level: "Advanced" },
+      { name: "Digital Marketing", level: "Advanced" },
+      { name: "Content Marketing", level: "Advanced" },
     ],
   },
 ];
+
+export const softSkills: string[] = [
+  "Problem-Solving",
+  "Communication",
+  "Teamwork",
+  "Leadership",
+  "Time Management",
+  "Creative Thinking",
+  "Adaptability",
+];
+
+export const languagesList: string[] = ["English", "Telugu", "Hindi"];
