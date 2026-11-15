@@ -45,7 +45,23 @@ body {
   background: rgba(59, 130, 246, 0.55);
 }
 
-/* Custom Minimal Cursor Rules (Desktop Only) */
+/* Custom Minimal Cursor Rules (Desktop Pointer Activated) */
+.has-custom-cursor,
+.has-custom-cursor body,
+.has-custom-cursor a,
+.has-custom-cursor button,
+.has-custom-cursor [role="button"],
+.has-custom-cursor .liquid-card,
+.has-custom-cursor .interactive-hover {
+  cursor: none !important;
+}
+
+.has-custom-cursor input,
+.has-custom-cursor textarea,
+.has-custom-cursor select {
+  cursor: text !important;
+}
+
 @media (hover: hover) and (pointer: fine) {
   body, a, button, [role="button"], .liquid-card, .interactive-hover {
     cursor: none !important;
