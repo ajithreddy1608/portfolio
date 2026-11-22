@@ -14,6 +14,10 @@ import {
   Clock,
 } from "lucide-react";
 
+const HIDDEN_REPO_NAMES = new Set(["cavoradigital", "livinglooms", "portfolio"]);
+
+const normalizeRepoName = (name: string) => name.toLowerCase().replace(/[^a-z0-9]/g, "");
+
 export default function GitHubReposExplorer() {
   const [repos, setRepos] = useState<GitHubRepo[]>([]);
   const [loading, setLoading] = useState(true);
@@ -41,7 +45,11 @@ export default function GitHubReposExplorer() {
     fetchRepos();
   }, []);
 
-  const filteredRepos = repos.filter(
+  const visibleRepos = repos.filter(
+    (repo) => !HIDDEN_REPO_NAMES.has(normalizeRepoName(repo.name))
+  );
+
+  const filteredRepos = visibleRepos.filter(
     (r) =>
       r.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
       (r.description &&
@@ -62,7 +70,7 @@ export default function GitHubReposExplorer() {
             <h3 className="text-lg font-bold text-white flex items-center gap-2">
               <span>Public GitHub Repositories</span>
               <span className="text-xs font-mono font-normal px-2 py-0.5 rounded-full bg-blue-500/10 text-cyan-300 border border-blue-500/20">
-                {repos.length} Repos
+                {visibleRepos.length} Repos
               </span>
             </h3>
             <p className="text-xs text-slate-400">
