@@ -4,7 +4,7 @@ import { ArrowLeft, Home, Sparkles } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-[#030712] text-slate-100">
+    <div className="min-h-screen flex items-center justify-center p-4 bg-[#f7f9fc] text-slate-800">
       <div className="liquid-card max-w-md w-full p-8 text-center space-y-6 border-white/10 shadow-2xl">
         <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border border-blue-400/30 flex items-center justify-center text-cyan-400">
           <Sparkles className="w-8 h-8" />

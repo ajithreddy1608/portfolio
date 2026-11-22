@@ -5,8 +5,8 @@ import ScrollProgress from "@/components/ScrollProgress";
 import CustomCursor from "@/components/CustomCursor";
 
 export const viewport: Viewport = {
-  themeColor: "#070a12",
-  colorScheme: "dark",
+  themeColor: "#f7f9fc",
+  colorScheme: "light",
   width: "device-width",
   initialScale: 1,
 };
@@ -67,8 +67,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark scroll-smooth">
-      <body className="font-sans bg-[#070a12] text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+    <html lang="en" className="light-theme scroll-smooth">
+      <body className="font-sans bg-[#f7f9fc] text-slate-800 antialiased selection:bg-cyan-500/20 selection:text-cyan-900">
         <CustomCursor />
         <ScrollProgress />
         <LiquidBackground />
