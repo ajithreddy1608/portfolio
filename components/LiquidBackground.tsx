@@ -23,7 +23,6 @@ export default function LiquidBackground() {
     let animId: number;
 
     const handleMouseMove = (e: MouseEvent) => {
-      // Very minimal micro-shift: max 4px
       const normX = (e.clientX / window.innerWidth - 0.5) * 2;
       const normY = (e.clientY / window.innerHeight - 0.5) * 2;
       targetX = normX * 4;
@@ -52,27 +51,21 @@ export default function LiquidBackground() {
   }, []);
 
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden z-0 bg-[#02050e]">
-      {/* 1. Deep Black / Midnight Navy Pure Base */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#02050e] via-[#030713] to-[#010309]" />
+    <div aria-hidden="true" className="liquid-background fixed inset-0 pointer-events-none overflow-hidden z-0">
+      <div className="absolute inset-0 bg-[#070a12]" />
 
-      {/* 2. Mostly Stable, Subtle Ambient Atmospheric Accents (No huge moving blobs) */}
-      <div
-        ref={ambientRef}
-        className="absolute inset-0 transition-transform duration-300 ease-out will-change-transform"
-      >
-        {/* Soft, calm electric blue ambient gradient at top */}
-        <div className="absolute top-[-15%] left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-b from-blue-600/10 via-blue-900/5 to-transparent rounded-full blur-[100px] opacity-70" />
+      {/* Layered midnight tones keep the long page calm while giving the hero depth. */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_-18%,rgba(59,130,246,0.2),transparent_48%),radial-gradient(ellipse_at_8%_28%,rgba(6,182,212,0.09),transparent_34%),radial-gradient(ellipse_at_92%_54%,rgba(139,92,246,0.08),transparent_38%),linear-gradient(180deg,#0b1020_0%,#080b14_48%,#06080e_100%)]" />
 
-        {/* Soft cyan subtle rim at bottom right */}
-        <div className="absolute bottom-[-10%] right-[10%] w-[500px] h-[300px] bg-gradient-to-t from-cyan-600/8 via-cyan-900/4 to-transparent rounded-full blur-[90px] opacity-60" />
-
-        {/* Subtle indigo depth accent on left */}
-        <div className="absolute top-[40%] -left-[10%] w-[450px] h-[400px] bg-gradient-to-r from-indigo-900/6 to-transparent rounded-full blur-[110px] opacity-50" />
+      <div ref={ambientRef} className="absolute inset-0 transition-transform duration-300 ease-out will-change-transform">
+        <div className="ambient-orb absolute -top-64 left-[12%] h-[40rem] w-[40rem] rounded-full bg-cyan-500/[0.09] blur-[150px]" />
+        <div className="ambient-orb ambient-orb--violet absolute top-[12%] -right-64 h-[38rem] w-[38rem] rounded-full bg-violet-500/[0.1] blur-[155px]" />
+        <div className="ambient-orb ambient-orb--cyan absolute -bottom-80 left-[38%] h-[42rem] w-[42rem] rounded-full bg-blue-500/[0.09] blur-[160px]" />
       </div>
 
-      {/* 3. Static Subtle Glass Micro-Grid */}
-      <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.035)_1px,transparent_1px)] [background-size:36px_36px] opacity-30" />
+      {/* Fine grid and soft vignette add structure without competing with content. */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(148,163,184,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(148,163,184,0.035)_1px,transparent_1px)] [background-size:72px_72px] [mask-image:linear-gradient(to_bottom,black,transparent_72%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_32%,transparent_4%,rgba(3,6,13,0.38)_100%)]" />
     </div>
   );
 }

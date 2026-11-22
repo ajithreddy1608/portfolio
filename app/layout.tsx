@@ -5,7 +5,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import CustomCursor from "@/components/CustomCursor";
 
 export const viewport: Viewport = {
-  themeColor: "#030712",
+  themeColor: "#070a12",
   colorScheme: "dark",
   width: "device-width",
   initialScale: 1,
@@ -68,7 +68,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark scroll-smooth">
-      <body className="font-sans bg-[#030712] text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+      <body className="font-sans bg-[#070a12] text-slate-100 antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
         <CustomCursor />
         <ScrollProgress />
         <LiquidBackground />

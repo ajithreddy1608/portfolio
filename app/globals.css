@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #030712;
+  --background: #070a12;
   --foreground: #f8fafc;
   --accent-blue: #3b82f6;
   --accent-cyan: #06b6d4;
@@ -29,17 +29,40 @@ body {
   min-height: 100vh;
 }
 
+.ambient-orb {
+  animation: ambient-drift 24s ease-in-out infinite alternate;
+}
+
+.ambient-orb--violet {
+  animation-delay: -8s;
+  animation-duration: 30s;
+}
+
+.ambient-orb--cyan {
+  animation-delay: -14s;
+  animation-duration: 27s;
+}
+
+@keyframes ambient-drift {
+  from { transform: translate3d(-2%, -1%, 0) scale(0.96); }
+  to { transform: translate3d(3%, 2%, 0) scale(1.06); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-orb { animation: none; }
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #030712;
+  background: #070a12;
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.16);
   border-radius: 9999px;
-  border: 1.5px solid #030712;
+  border: 1.5px solid #070a12;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(59, 130, 246, 0.55);
