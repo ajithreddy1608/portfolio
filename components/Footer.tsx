@@ -1,8 +1,7 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
-import { Github, Linkedin, Mail, ArrowUp, Heart } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowUp } from "lucide-react";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -18,7 +17,7 @@ export default function Footer() {
         {/* Brand & Tagline */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <div className="flex items-center gap-2 mb-1.5">
-            <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-[9px] font-mono font-bold shadow-md">
+            <div className="flex h-6 w-6 items-center justify-center rounded-md bg-stone-900 text-[#ffffff] text-[9px] font-mono font-bold">
               KAR
             </div>
             <span className="text-sm font-bold text-white tracking-wide">
@@ -26,8 +25,8 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-xs text-slate-400 max-w-sm">
-            Developer | AI &amp; ML Enthusiast | Technology Explorer. Built with
-            Next.js, TypeScript, and Liquid Glass design system.
+            Software developer, AI &amp; ML enthusiast, and founder of AS –
+            Everything Starts Here and AS-Works.
           </p>
         </div>
 

@@ -1,6 +1,6 @@
 # Katta Ajith Reddy — Personal Portfolio Website
 
-A personal portfolio website engineered with **Next.js (App Router)**, **TypeScript**, **Tailwind CSS**, and an **Apple-inspired Liquid Glass (Glisse) UI/UX**.
+A personal portfolio website built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**, using a restrained editorial style with a warm neutral palette and subtle translucent navigation.
 
 Designed to professionally represent **Katta Ajith Reddy** — Computer Science student specializing in Artificial Intelligence and Machine Learning at Aurora Deemed University.
 
@@ -8,11 +8,10 @@ Designed to professionally represent **Katta Ajith Reddy** — Computer Science 
 
 ## 🌟 Key Highlights & Architecture
 
-- **Design System — Liquid Glass UI/UX**: Realistic backdrop blur, translucent glass surfaces, specular rim highlights, subtle gradients, and glowing accents in electric blue and cyan.
-- **Section 01: Hero / Introduction**: High-impact split layout featuring Ajith's real photograph (`/ajith.jpg`) in a liquid glass frame, verified credentials, and instant CTAs.
-- **Section 02: About Me**: Authentic human narrative outlining engineering foundations, AI/ML specialization, systems thinking, and professional goals.
-- **Section 03: Technical Skills**: Categorized glass cards for Programming Languages, Web Development, AI & Machine Learning, and Engineering Tools.
-- **Section 04: Selected Projects**:
+- **Design System**: Editorial serif headings, charcoal type, warm off-white surfaces, restrained motion, and subtle navigation blur.
+- **Hero / Introduction**: Split layout with Ajith's photograph (`/ajith.jpg`), direct introduction, and resume and project links.
+- **About Me**: Personal introduction to Ajith's engineering interests and work as founder of AS and AS-Works.
+- **Selected Projects**:
   - **RedConnect**: Full-stack emergency blood donor matching platform with Mapbox geolocation, Supabase, and Drizzle ORM.
   - **Processor Architecture Design**: Systems-level simulation and benchmarking across CPU, GPU, and TPU architectures using Python and FastAPI.
   - **Online Resume Builder**: Real-time reactive ATS-friendly CV builder.
@@ -20,12 +19,14 @@ Designed to professionally represent **Katta Ajith Reddy** — Computer Science 
   - **Old Photograph Restoration**: Deep generative restoration pipeline.
   - **CineVerse**: Cinematic media exploration and discovery experience.
   - **Live GitHub Repositories Explorer**: Synchronized via Next.js API route (`/api/github/repos`) to explore all public repositories with real-time search.
-- **Section 05: Academic Journey**: Aurora Deemed University (B.Tech in CSE-AIML, 3rd Year, Section 3C) with relevant technical coursework and laboratory projects.
-- **Section 06: Certifications & Achievements**: Verified industry credentials and workshops from Microsoft & Skill India, StaxTech AI/ML Internship, Google for Developers & SmartBridge (Generative AI & Antigravity), MentorX & IEEE (Microsoft MVP in AI), be10x, and LearnTube.ai, alongside national hackathons (HackWithHyderabad, Vibe With India 2.0) and venture credentials (Wadhwani Global Entrepreneur).
-- **Section 07: Professional Experience**: Digital Marketing Internship at Sashverse Technologies Pvt. Ltd. (*Workverse*), detailing core responsibilities and deliverables.
-- **Section 08: Resume / CV**: Downloadable PDF link (`public/Ajith-Reddy-Resume.pdf`) and interactive summary preview modal.
-- **Section 09: Contact**: Direct communication channels (email, phone, LinkedIn, GitHub) and a validated message interface.
-- **Floating Liquid Glass Navigation**: Active section tracker, smooth scrolling, and responsive mobile glass drawer.
+- **Entrepreneurship & Leadership**: AS – Everything Starts Here and AS-Works, with brand copy, philosophy, service list, logos, and external links.
+- **Technical Skills**: Categorized groups for Programming Languages, Web Development, AI & Machine Learning, and Engineering Tools.
+- **Academic Journey**: Aurora Deemed University (B.Tech in CSE-AIML, 3rd Year, Section 3C) with relevant technical coursework and laboratory projects.
+- **Certifications & Achievements**: Industry credentials, workshops, hackathons, and venture credentials.
+- **Professional Experience**: Digital Marketing Internship at Sashverse Technologies Pvt. Ltd. (*Workverse*), detailing core responsibilities and deliverables.
+- **Resume / CV**: Downloadable PDF link (`public/Ajith-Reddy-Resume.pdf`) and interactive summary preview modal.
+- **Contact**: Direct communication channels (email, phone, LinkedIn, GitHub) and a validated message interface.
+- **Responsive Navigation**: Translucent header, active section tracker, smooth scrolling, and mobile menu.
 - **Production-Ready**: Zero broken links, accessible markup, Open Graph / SEO metadata, and custom 404 page.
 
 ---
@@ -36,7 +37,7 @@ Designed to professionally represent **Katta Ajith Reddy** — Computer Science 
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Icons**: [Lucide React](https://lucide.dev/)
-- **Animations & Effects**: Tailwind CSS transitions, CSS Backdrop Filter & Liquid Glass styling
+- **Animations & Effects**: Short transitions, smooth in-page navigation, and reduced-motion support
 
 ---
 
@@ -99,27 +100,27 @@ portfolio/
 │   │   └── github/
 │   │       └── repos/
 │   │           └── route.ts         # GitHub public repos API
-│   ├── globals.css                  # Liquid glass & Glisse utility classes
+│   ├── globals.css                  # Editorial theme and shared surfaces
 │   ├── layout.tsx                   # SEO, Open Graph & Root Layout
 │   ├── not-found.tsx                # Custom 404 page
 │   └── page.tsx                     # Main page orchestrator
 ├── components/
-│   ├── About.tsx                    # Section 02: About Me
-│   ├── BackgroundBlobs.tsx          # Ambient cyan/blue liquid glows
-│   ├── Certifications.tsx           # Section 06: Verified credentials
-│   ├── Contact.tsx                  # Section 09: Contact & messaging
-│   ├── Education.tsx                # Section 05: Academic timeline
-│   ├── Experience.tsx               # Section 07: Workverse internship
-│   ├── Footer.tsx                   # Liquid glass footer
+│   ├── About.tsx                    # About Ajith
+│   ├── Certifications.tsx           # Verified credentials
+│   ├── Contact.tsx                  # Contact & messaging
+│   ├── Education.tsx                # Academic timeline
+│   ├── Experience.tsx               # Workverse internship
+│   ├── Footer.tsx                   # Portfolio footer and social links
 │   ├── GitHubReposExplorer.tsx      # Interactive GitHub repos viewer
-│   ├── Hero.tsx                     # Section 01: Hero with real photo
-│   ├── Navbar.tsx                   # Floating liquid glass navigation
+│   ├── Hero.tsx                     # Introduction with real photo
+│   ├── Navbar.tsx                   # Responsive translucent navigation
+│   ├── Entrepreneurship.tsx         # AS and AS-Works ventures
 │   ├── ProjectCard.tsx              # Project card component
 │   ├── ProjectModal.tsx             # Interactive project detail dialog
-│   ├── Projects.tsx                 # Section 04: Selected projects
-│   ├── Resume.tsx                   # Section 08: Resume preview & CTA
-│   ├── ScrollProgress.tsx           # Liquid glass scroll progress bar
-│   └── Skills.tsx                   # Section 03: Categorized skills
+│   ├── Projects.tsx                 # Selected projects
+│   ├── Resume.tsx                   # Resume preview & CTA
+│   ├── ScrollProgress.tsx           # Scroll progress indicator
+│   └── Skills.tsx                   # Categorized technical skills
 ├── data/
 │   ├── certifications.ts            # Easy-to-update certificates data
 │   ├── education.ts                 # Academic timeline data
@@ -130,9 +131,11 @@ portfolio/
 │   └── utils.ts                     # Utility helpers
 ├── public/
 │   ├── ajith.jpg                    # Personal profile photograph
+│   ├── as-logo.png                  # AS parent brand logo
+│   ├── as-works-logo.png            # AS-Works logo
 │   └── Ajith-Reddy-Resume.pdf       # Place resume PDF here
 ├── next.config.mjs                  # Remote image patterns & configuration
-├── tailwind.config.ts               # Custom liquid glass theme
+├── tailwind.config.ts               # Tailwind theme configuration
 └── tsconfig.json                    # TypeScript configuration
 ```
 

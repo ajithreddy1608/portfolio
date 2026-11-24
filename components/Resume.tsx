@@ -26,7 +26,7 @@ export default function Resume() {
         <div className="flex flex-col items-center text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-mono uppercase tracking-wider mb-3">
             <FileText className="w-3.5 h-3.5" />
-            <span>Section 08 // Official Curriculum Vitae</span>
+            <span>Resume</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-4">
             Curriculum Vitae
@@ -38,7 +38,7 @@ export default function Resume() {
           <div className="h-1 w-16 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full mt-4" />
         </div>
 
-        {/* Liquid Glass Resume Box */}
+        {/* Resume summary and actions */}
         <div className="max-w-4xl mx-auto liquid-card p-6 sm:p-10 border-blue-500/20">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             {/* Left Summary */}

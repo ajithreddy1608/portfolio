@@ -36,7 +36,7 @@ export default function Projects() {
         <div className="flex flex-col items-center text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-mono uppercase tracking-wider mb-3">
             <FolderGit2 className="w-3.5 h-3.5" />
-            <span>Section 04 // Portfolio</span>
+            <span>Selected work</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-4">
             Selected Projects
