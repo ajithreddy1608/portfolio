@@ -21,7 +21,7 @@ export default function Education() {
         <div className="flex flex-col items-center text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-3">
             <GraduationCap className="w-3.5 h-3.5" />
-            <span>Education</span>
+            <span>Section 05 // Academics</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-4">
             Education

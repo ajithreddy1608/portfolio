@@ -2,9 +2,10 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import LiquidBackground from "@/components/LiquidBackground";
 import ScrollProgress from "@/components/ScrollProgress";
+import CustomCursor from "@/components/CustomCursor";
 
 export const viewport: Viewport = {
-  themeColor: "#f7f6f2",
+  themeColor: "#f7f9fc",
   colorScheme: "light",
   width: "device-width",
   initialScale: 1,
@@ -68,7 +69,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light-theme scroll-smooth">
-      <body className="font-sans bg-[#f7f6f2] text-stone-800 antialiased">
+      <body className="font-sans bg-[#f7f9fc] text-slate-800 antialiased selection:bg-cyan-500/20 selection:text-cyan-900">
+        <CustomCursor />
         <ScrollProgress />
         <LiquidBackground />
         <div className="relative z-10 flex min-h-screen flex-col">

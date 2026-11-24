@@ -1,6 +1,6 @@
 # Katta Ajith Reddy — Personal Portfolio Website
 
-A personal portfolio website built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**, using a restrained editorial style with a warm neutral palette and subtle translucent navigation.
+A personal portfolio website built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**, using a light Liquid Glass style with soft blue and cyan accents.
 
 Designed to professionally represent **Katta Ajith Reddy** — Computer Science student specializing in Artificial Intelligence and Machine Learning at Aurora Deemed University.
 
@@ -8,8 +8,8 @@ Designed to professionally represent **Katta Ajith Reddy** — Computer Science 
 
 ## 🌟 Key Highlights & Architecture
 
-- **Design System**: Editorial serif headings, charcoal type, warm off-white surfaces, restrained motion, and subtle navigation blur.
-- **Hero / Introduction**: Split layout with Ajith's photograph (`/ajith.jpg`), direct introduction, and resume and project links.
+- **Design System**: Airy layered background, translucent cards, cool light surfaces, blue and cyan accents, and responsive glass navigation.
+- **Hero / Introduction**: Split layout with Ajith's photograph (`/ajith.jpg`) in a liquid glass frame, direct introduction, and resume and project links.
 - **About Me**: Personal introduction to Ajith's engineering interests and work as founder of AS and AS-Works.
 - **Selected Projects**:
   - **RedConnect**: Full-stack emergency blood donor matching platform with Mapbox geolocation, Supabase, and Drizzle ORM.
@@ -20,13 +20,13 @@ Designed to professionally represent **Katta Ajith Reddy** — Computer Science 
   - **CineVerse**: Cinematic media exploration and discovery experience.
   - **Live GitHub Repositories Explorer**: Synchronized via Next.js API route (`/api/github/repos`) to explore all public repositories with real-time search.
 - **Entrepreneurship & Leadership**: AS – Everything Starts Here and AS-Works, with brand copy, philosophy, service list, logos, and external links.
-- **Technical Skills**: Categorized groups for Programming Languages, Web Development, AI & Machine Learning, and Engineering Tools.
+- **Technical Skills**: Categorized glass cards for Programming Languages, Web Development, AI & Machine Learning, and Engineering Tools.
 - **Academic Journey**: Aurora Deemed University (B.Tech in CSE-AIML, 3rd Year, Section 3C) with relevant technical coursework and laboratory projects.
 - **Certifications & Achievements**: Industry credentials, workshops, hackathons, and venture credentials.
 - **Professional Experience**: Digital Marketing Internship at Sashverse Technologies Pvt. Ltd. (*Workverse*), detailing core responsibilities and deliverables.
 - **Resume / CV**: Downloadable PDF link (`public/Ajith-Reddy-Resume.pdf`) and interactive summary preview modal.
 - **Contact**: Direct communication channels (email, phone, LinkedIn, GitHub) and a validated message interface.
-- **Responsive Navigation**: Translucent header, active section tracker, smooth scrolling, and mobile menu.
+- **Responsive Navigation**: Floating light glass header, active section tracker, smooth scrolling, and mobile menu.
 - **Production-Ready**: Zero broken links, accessible markup, Open Graph / SEO metadata, and custom 404 page.
 
 ---
@@ -37,7 +37,7 @@ Designed to professionally represent **Katta Ajith Reddy** — Computer Science 
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **Icons**: [Lucide React](https://lucide.dev/)
-- **Animations & Effects**: Short transitions, smooth in-page navigation, and reduced-motion support
+- **Animations & Effects**: Ambient background movement, Tailwind transitions, smooth in-page navigation, and reduced-motion support
 
 ---
 
@@ -100,7 +100,7 @@ portfolio/
 │   │   └── github/
 │   │       └── repos/
 │   │           └── route.ts         # GitHub public repos API
-│   ├── globals.css                  # Editorial theme and shared surfaces
+│   ├── globals.css                  # Light Liquid Glass palette and shared surfaces
 │   ├── layout.tsx                   # SEO, Open Graph & Root Layout
 │   ├── not-found.tsx                # Custom 404 page
 │   └── page.tsx                     # Main page orchestrator

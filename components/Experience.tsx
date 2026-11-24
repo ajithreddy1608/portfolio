@@ -35,7 +35,7 @@ export default function Experience() {
         <div className="flex flex-col items-center text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-3.5 shadow-[0_0_15px_rgba(6,182,212,0.15)]">
             <Briefcase className="w-3.5 h-3.5" />
-            <span>Experience</span>
+            <span>Section 07 // Experience</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4">
             Internship Experience

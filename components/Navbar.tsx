@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, FileDown } from "lucide-react";
+import { Menu, X, FileDown, Sparkles } from "lucide-react";
 
 interface NavItem {
   label: string;
@@ -80,11 +80,12 @@ export default function Navbar() {
             onClick={(e) => handleNavClick(e, "#home")}
             className="group flex items-center gap-2.5 text-slate-100 font-semibold tracking-tight transition-all duration-200"
           >
-            <div className="relative flex h-8 w-8 items-center justify-center rounded-lg bg-stone-900 transition-colors group-hover:bg-stone-700">
-              <span className="text-[#ffffff] text-[10px] font-bold font-mono">KAR</span>
+            <div className="relative w-8 h-8 rounded-xl bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center shadow-[0_0_15px_rgba(59,130,246,0.5)] group-hover:scale-105 transition-transform">
+              <span className="text-white text-[10px] font-bold font-mono">KAR</span>
+              <div className="absolute inset-0 rounded-xl bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
             <div className="flex flex-col">
-              <span className="text-sm font-semibold tracking-wide text-white transition-colors group-hover:text-stone-700">
+              <span className="text-sm font-semibold tracking-wide text-white group-hover:text-cyan-400 transition-colors">
                 Katta Ajith Reddy
               </span>
               <span className="text-[10px] text-slate-400 font-mono tracking-wider -mt-0.5">
@@ -132,6 +133,7 @@ export default function Navbar() {
               onClick={(e) => handleNavClick(e, "#contact")}
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-medium text-white bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 rounded-xl shadow-[0_0_20px_rgba(59,130,246,0.4)] transition-all duration-200 hover:scale-[1.02]"
             >
+              <Sparkles className="w-3.5 h-3.5" />
               <span>Connect</span>
             </a>
           </div>
@@ -186,6 +188,7 @@ export default function Navbar() {
                 onClick={(e) => handleNavClick(e, "#contact")}
                 className="flex-1 flex items-center justify-center gap-1.5 py-2 text-xs font-medium text-white bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl shadow-lg"
               >
+                <Sparkles className="w-3.5 h-3.5" />
                 Connect
               </a>
             </div>

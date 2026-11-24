@@ -3,170 +3,319 @@
 @tailwind utilities;
 
 :root {
-  --background: #f7f6f2;
-  --foreground: #222321;
-  --accent: #53645a;
-  --line: #e5e2db;
+  --background: #070a12;
+  --foreground: #f8fafc;
+  --accent-blue: #3b82f6;
+  --accent-cyan: #06b6d4;
+  --glass-bg: rgba(13, 20, 38, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-highlight: rgba(255, 255, 255, 0.22);
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 body {
-  min-height: 100vh;
-  overflow-x: hidden;
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  overflow-x: hidden;
+  min-height: 100vh;
 }
 
-.light-theme h1,
-.light-theme h2 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 500;
-  letter-spacing: -0.035em;
+.ambient-orb {
+  animation: ambient-drift 24s ease-in-out infinite alternate;
 }
 
-::selection { background: #dcded8; color: #1c201d; }
-
-:focus-visible {
-  outline: 2px solid #66776c;
-  outline-offset: 3px;
+.ambient-orb--violet {
+  animation-delay: -8s;
+  animation-duration: 30s;
 }
 
-html { scrollbar-color: #c5c2ba #f7f6f2; scrollbar-width: thin; }
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: #f7f6f2; }
-::-webkit-scrollbar-thumb {
-  border: 2px solid #f7f6f2;
-  border-radius: 999px;
-  background: #c5c2ba;
-}
-::-webkit-scrollbar-thumb:hover { background: #a5a299; }
-
-/* Restrained surfaces keep Liquid Glass as a light navigation detail. */
-.liquid-glass-nav {
-  border: 1px solid rgba(44, 46, 42, 0.1);
-  background: rgba(250, 249, 246, 0.86);
-  box-shadow: 0 8px 24px -18px rgba(28, 30, 27, 0.34);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+.ambient-orb--cyan {
+  animation-delay: -14s;
+  animation-duration: 27s;
 }
 
-.liquid-glass {
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 16px 40px -30px rgba(30, 32, 29, 0.38);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}
-
-.liquid-card {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #e4e1da;
-  border-radius: 1rem;
-  background: #fff;
-  box-shadow: 0 10px 26px -23px rgba(31, 32, 28, 0.36);
-  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
-}
-
-.liquid-card::before { display: none; }
-
-.liquid-card:hover {
-  transform: translateY(-2px);
-  border-color: #cbc8c0;
-  box-shadow: 0 16px 30px -23px rgba(31, 32, 28, 0.38);
-}
-
-.liquid-badge {
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid #e1ded7;
-  border-radius: 999px;
-  background: #f3f2ee;
-  padding: 0.25rem 0.75rem;
-  color: #52544f;
-  font-size: 0.75rem;
-  font-weight: 500;
-}
-
-/* Neutralize legacy blue glass utilities while keeping their layout intact. */
-.light-theme .text-white { color: #20211f; }
-.light-theme .text-slate-100 { color: #292a27; }
-.light-theme .text-slate-200,
-.light-theme .text-slate-300 { color: #555650; }
-.light-theme .text-slate-400,
-.light-theme .text-slate-500 { color: #70716b; }
-.light-theme .text-cyan-200,
-.light-theme .text-cyan-300,
-.light-theme .text-cyan-400 { color: #586b5e; }
-.light-theme .text-blue-200,
-.light-theme .text-blue-300,
-.light-theme .text-blue-400,
-.light-theme .text-blue-500 { color: #53645a; }
-
-.light-theme [class*="bg-white/"] { background-color: rgba(250, 249, 246, 0.78); }
-.light-theme [class*="border-white/"] { border-color: rgba(54, 55, 50, 0.12); }
-.light-theme [class*="border-blue-"],
-.light-theme [class*="border-cyan-"],
-.light-theme [class*="border-indigo-"] { border-color: #d8d5cd; }
-.light-theme [class*="bg-blue-"],
-.light-theme [class*="bg-cyan-"],
-.light-theme [class*="bg-indigo-"] { background-color: #efeee9; }
-
-.light-theme [class*="bg-gradient-to-"] {
-  background-image: none !important;
-}
-
-.light-theme [class*="bg-gradient-to-br"],
-.light-theme [class*="bg-gradient-to-b"] {
-  background-color: #eeede8 !important;
-}
-
-.light-theme a[class*="bg-gradient-to-r"],
-.light-theme button[class*="bg-gradient-to-r"] {
-  border: 1px solid #202321;
-  background-color: #202321 !important;
-  color: #fff !important;
-  box-shadow: 0 5px 14px -9px rgba(23, 25, 22, 0.6);
-}
-
-.light-theme nav a span[class*="bg-gradient-to-r"] {
-  border-color: #dedbd3;
-  background-color: #eeede8;
-  box-shadow: none;
-}
-
-.light-theme section [class*="font-mono"][class*="uppercase"][class*="tracking-wider"][class*="rounded-full"] {
-  border-color: transparent;
-  border-radius: 0;
-  background-color: transparent;
-  padding: 0;
-  box-shadow: none;
-  color: #6b6b64;
-  font-family: inherit;
-  font-size: 0.7rem;
-  letter-spacing: 0.16em;
-}
-
-.light-theme section h2 + div[class~="h-1"] { display: none; }
-
-.light-theme footer {
-  border-color: var(--line);
-  background: #f2f1ed;
+@keyframes ambient-drift {
+  from { transform: translate3d(-2%, -1%, 0) scale(0.96); }
+  to { transform: translate3d(3%, 2%, 0) scale(1.06); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after {
-    scroll-behavior: auto !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+  .ambient-orb { animation: none; }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #070a12;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 9999px;
+  border: 1.5px solid #070a12;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.55);
+}
+
+/* Custom Minimal Cursor Rules (Desktop Pointer Activated) */
+.has-custom-cursor,
+.has-custom-cursor body,
+.has-custom-cursor a,
+.has-custom-cursor button,
+.has-custom-cursor [role="button"],
+.has-custom-cursor .liquid-card,
+.has-custom-cursor .interactive-hover {
+  cursor: none !important;
+}
+
+.has-custom-cursor input,
+.has-custom-cursor textarea,
+.has-custom-cursor select {
+  cursor: text !important;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  body, a, button, [role="button"], .liquid-card, .interactive-hover {
+    cursor: none !important;
   }
+  input, textarea, select {
+    cursor: text !important;
+  }
+}
+
+/* =========================================================================
+   Apple-Inspired Liquid Glass UI / Glisse Utilities
+   ========================================================================= */
+
+/* Base Liquid Glass Layer */
+.liquid-glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.055) 0%,
+    rgba(255, 255, 255, 0.015) 100%
+  );
+  backdrop-filter: blur(20px) saturate(190%);
+  -webkit-backdrop-filter: blur(20px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 12px 35px -5px rgba(0, 0, 0, 0.55),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.22),
+    inset 0 -1px 2px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.liquid-glass-interactive:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.09) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  border-color: rgba(59, 130, 246, 0.45);
+  box-shadow:
+    0 20px 45px -8px rgba(0, 0, 0, 0.65),
+    0 0 28px -5px rgba(59, 130, 246, 0.28),
+    inset 0 1px 2px 0 rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Floating Navigation Liquid Pill */
+.liquid-glass-nav {
+  background: rgba(8, 14, 28, 0.75);
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow:
+    0 20px 40px -10px rgba(0, 0, 0, 0.75),
+    0 0 25px -5px rgba(59, 130, 246, 0.18),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.25);
+}
+
+/* Liquid Glass Cards */
+.liquid-card {
+  position: relative;
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.65) 0%,
+    rgba(2, 6, 23, 0.78) 100%
+  );
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow:
+    0 12px 35px -5px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 -1px 2px 0 rgba(0, 0, 0, 0.4);
+  transition: all 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Specular Rim Light across top border of cards */
+.liquid-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.32) 50%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.liquid-card:hover {
+  border-color: rgba(59, 130, 246, 0.38);
+  box-shadow:
+    0 24px 50px -10px rgba(0, 0, 0, 0.7),
+    0 0 35px -5px rgba(59, 130, 246, 0.22),
+    0 0 15px -3px rgba(6, 182, 212, 0.15),
+    inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.28);
+  transform: translateY(-3px);
+}
+
+/* Ambient liquid background blobs */
+.liquid-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
+  mix-blend-mode: screen;
+}
+
+/* Liquid Pill Badge */
+.liquid-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #94a3b8;
+  transition: all 0.2s ease;
+}
+
+.liquid-badge:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8fafc;
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Ambient glow accents */
+.glow-blue {
+  box-shadow: 0 0 35px -5px rgba(59, 130, 246, 0.45);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 35px -5px rgba(6, 182, 212, 0.45);
+}
+
+/* Shimmer animation */
+@keyframes liquidShimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-liquid-shimmer {
+  animation: liquidShimmer 2.5s infinite;
+}
+
+/* Light portfolio palette: cool whites, slate ink, and soft blue accents. */
+.light-theme {
+  color-scheme: light;
+  --background: #f7f9fc;
+  --foreground: #172033;
+  --glass-bg: rgba(255, 255, 255, 0.78);
+  --glass-border: rgba(148, 163, 184, 0.24);
+}
+
+.light-theme body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.light-theme .liquid-glass,
+.light-theme .liquid-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.92), rgba(248, 250, 252, 0.82));
+  border-color: rgba(148, 163, 184, 0.22);
+  box-shadow: 0 16px 42px -24px rgba(30, 64, 110, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  color: #334155;
+}
+
+.light-theme .liquid-glass-nav {
+  background: rgba(255, 255, 255, 0.82);
+  border-color: rgba(148, 163, 184, 0.24);
+  box-shadow: 0 14px 36px -22px rgba(30, 64, 110, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.light-theme .liquid-card:hover {
+  box-shadow: 0 24px 50px -25px rgba(37, 99, 235, 0.32), 0 0 28px -18px rgba(6, 182, 212, 0.32);
+}
+
+.light-theme [class*="bg-white/"] {
+  background-color: rgba(226, 232, 240, 0.48);
+}
+
+.light-theme [class*="border-white/"] {
+  border-color: rgba(100, 116, 139, 0.2);
+}
+
+.light-theme .text-white { color: #172033; }
+.light-theme .text-slate-100 { color: #1e293b; }
+.light-theme .text-slate-200,
+.light-theme .text-slate-300 { color: #475569; }
+.light-theme .text-slate-400 { color: #64748b; }
+.light-theme .text-slate-500 { color: #64748b; }
+.light-theme .text-cyan-200,
+.light-theme .text-cyan-300 { color: #0e7490; }
+.light-theme .text-blue-200,
+.light-theme .text-blue-300 { color: #1d4ed8; }
+
+/* Preserve white type over the photo and primary gradient actions. */
+.light-theme [class*="bg-slate-950"] .text-white,
+.light-theme [class*="bg-slate-900"] .text-white,
+.light-theme [class*="bg-gradient-to-r"].text-white {
+  color: #fff;
+}
+
+.light-theme [class*="bg-slate-950"] .text-slate-200,
+.light-theme [class*="bg-slate-900"] .text-slate-200 { color: #e2e8f0; }
+.light-theme [class*="bg-slate-950"] .text-slate-300,
+.light-theme [class*="bg-slate-900"] .text-slate-300 { color: #cbd5e1; }
+.light-theme [class*="bg-slate-950"] .text-slate-400,
+.light-theme [class*="bg-slate-900"] .text-slate-400 { color: #94a3b8; }
+
+.light-theme footer {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(148, 163, 184, 0.22);
+}
+
+.light-theme ::-webkit-scrollbar-track { background: #eef2f7; }
+.light-theme ::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.32);
+  border-color: #eef2f7;
 }

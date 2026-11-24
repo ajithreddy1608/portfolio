@@ -48,7 +48,7 @@ export default function Certifications() {
         <div className="flex flex-col items-center text-center mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-cyan-300 text-xs font-mono uppercase tracking-wider mb-3.5 shadow-[0_0_15px_rgba(59,130,246,0.15)]">
             <Award className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Certifications</span>
+            <span>Section 06 // Credentials &amp; Achievements</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4">
             Certifications &amp; Workshops

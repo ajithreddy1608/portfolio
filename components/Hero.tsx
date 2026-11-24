@@ -4,12 +4,14 @@ import React from "react";
 import Image from "next/image";
 import {
   MapPin,
+  Sparkles,
   ArrowRight,
   FileDown,
   Github,
   Linkedin,
   Mail,
   GraduationCap,
+  Code2,
 } from "lucide-react";
 
 export default function Hero() {
@@ -53,10 +55,14 @@ export default function Hero() {
 
             {/* Name & Title */}
             <div className="space-y-3 mb-6">
-              <h1 className="font-serif text-4xl font-medium leading-[1.12] tracking-tight text-stone-950 sm:text-5xl lg:text-6xl">
+              <div className="inline-flex items-center gap-2 text-sm font-medium text-cyan-400 font-mono tracking-wide">
+                <span>HELLO WORLD</span>
+                <span className="h-px w-8 bg-cyan-400/50" />
+              </div>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.12]">
                 Katta Ajith Reddy
               </h1>
-              <p className="text-lg font-medium text-stone-700 sm:text-xl">
+              <p className="text-lg sm:text-xl font-semibold bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-300 bg-clip-text text-transparent">
                 Software Developer | AI &amp; ML Enthusiast | Founder
               </p>
             </div>
@@ -130,30 +136,55 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right column: portrait and study details */}
+          {/* Right Column: Premium Profile Photograph with Liquid Glass Frame */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end z-10">
             <div className="relative w-full max-w-[340px] sm:max-w-[380px]">
               {/* Backlight Ambient Glow */}
-              <div className="relative rounded-2xl border border-stone-200 bg-white p-2 shadow-[0_18px_45px_-35px_rgba(28,29,26,0.5)]">
-                <div className="relative aspect-[4/5] w-full overflow-hidden rounded-xl bg-stone-100">
+              <div className="absolute -inset-4 bg-gradient-to-tr from-blue-600/30 via-cyan-500/25 to-indigo-600/30 rounded-3xl blur-2xl opacity-75 group-hover:opacity-100 transition-all duration-700 pointer-events-none" />
+
+              {/* Liquid Glass Outer Shell */}
+              <div className="relative rounded-3xl p-3 sm:p-4 bg-gradient-to-b from-white/[0.12] to-white/[0.02] backdrop-blur-2xl border border-white/20 shadow-2xl">
+                {/* Top Specular Rim */}
+                <div className="absolute top-0 left-8 right-8 h-[1px] bg-gradient-to-r from-transparent via-white/50 to-transparent" />
+
+                {/* Inner Image Container */}
+                <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-slate-900 shadow-inner">
                   <Image
                     src="/ajith.jpg"
                     alt="Katta Ajith Reddy - Software Developer & AI/ML Enthusiast"
                     fill
                     priority
                     sizes="(max-width: 768px) 100vw, 380px"
-                    className="object-cover object-center transition-transform duration-500 hover:scale-[1.02]"
+                    className="object-cover object-center scale-100 hover:scale-105 transition-transform duration-700 ease-out"
                   />
+
+                  {/* Gentle gradient overlay for cinematic contrast */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/20 pointer-events-none" />
+
+                  {/* Corner Accent Badge */}
+                  <div className="absolute bottom-3 left-3 right-3 p-3 rounded-xl bg-slate-950/70 backdrop-blur-md border border-white/10 flex items-center justify-between text-xs">
+                    <div className="flex items-center gap-2">
+                      <GraduationCap className="w-4 h-4 text-cyan-400" />
+                      <div>
+                        <div className="font-semibold text-white">
+                          Aurora University
+                        </div>
+                        <div className="text-[10px] text-slate-400">
+                          B.Tech CSE - AIML
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-1 text-[11px] font-mono text-cyan-300 bg-cyan-950/60 px-2 py-0.5 rounded-md border border-cyan-500/30">
+                      <Code2 className="w-3 h-3" />
+                      <span>3rd Year</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div className="mt-4 flex items-center justify-between gap-4 border-t border-stone-200 pt-4">
-                <div>
-                  <p className="text-sm font-semibold text-stone-800">Aurora University</p>
-                  <p className="mt-0.5 text-xs text-stone-500">B.Tech CSE · AI &amp; ML</p>
-                </div>
-                <div className="flex items-center gap-1.5 text-xs text-stone-500">
-                  <GraduationCap className="h-4 w-4" aria-hidden="true" />
-                  <span>Third year</span>
+
+                {/* Floating Glass Pill: Focus Pill */}
+                <div className="absolute -top-3 -right-3 px-3.5 py-1.5 rounded-full bg-slate-900/90 backdrop-blur-md border border-blue-400/40 shadow-[0_0_15px_rgba(59,130,246,0.3)] text-[11px] font-medium text-cyan-300 flex items-center gap-1.5">
+                  <Sparkles className="w-3 h-3 text-cyan-400" />
+                  <span>AI, Full Stack &amp; Founder</span>
                 </div>
               </div>
             </div>

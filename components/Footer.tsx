@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { Github, Linkedin, Mail, ArrowUp } from "lucide-react";
+import Link from "next/link";
+import { Github, Linkedin, Mail, ArrowUp, Heart } from "lucide-react";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -17,7 +18,7 @@ export default function Footer() {
         {/* Brand & Tagline */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <div className="flex items-center gap-2 mb-1.5">
-            <div className="flex h-6 w-6 items-center justify-center rounded-md bg-stone-900 text-[#ffffff] text-[9px] font-mono font-bold">
+            <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center text-white text-[9px] font-mono font-bold shadow-md">
               KAR
             </div>
             <span className="text-sm font-bold text-white tracking-wide">
