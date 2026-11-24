@@ -65,7 +65,7 @@ export default function About() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-white">
-                  Engineering Foundations &amp; Curiosity
+                  Engineering &amp; Entrepreneurship
                 </h3>
                 <p className="text-xs text-slate-400">
                   Third-year B.Tech Student in CSE (AI &amp; ML) at Aurora Deemed University
@@ -77,23 +77,16 @@ export default function About() {
               <p>
                 I am a third-year Computer Science student specializing in
                 Artificial Intelligence and Machine Learning at Aurora Deemed
-                University. My journey in technology is driven by a deep curiosity
-                to understand how modern software works from the architectural
-                core up to the pixel-perfect user interface.
+                University. I enjoy software development, intelligent systems
+                and turning technical ideas into useful digital products.
               </p>
               <p>
-                Rather than treating AI and software development as isolated
-                disciplines, I focus on the intersection: taking sophisticated
-                computational models and deploying them into responsive,
-                accessible web applications that solve tangible everyday
-                problems.
-              </p>
-              <p>
-                Whether it is architecting a real-time blood donor geo-matching
-                platform, simulating matrix multiplication across CPU, GPU, and
-                TPU hardware profiles, or training convolutional networks to
-                diagnose crop disease, I prioritize writing clean, maintainable
-                code and validating everything through working software.
+                Alongside my technical interests, I am building businesses and
+                exploring opportunities through AS – Everything Starts Here. As
+                the founder of AS-WORKS, I focus on digital services, creative
+                execution and technology-driven solutions. My interests include
+                entrepreneurship, brand building and turning ideas into
+                practical solutions.
               </p>
             </div>
 

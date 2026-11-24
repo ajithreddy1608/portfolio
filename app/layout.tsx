@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ajithreddy.dev"),
   title: "Katta Ajith Reddy | Developer | AI & ML Enthusiast | Founder",
   description:
-    "Personal portfolio of Katta Ajith Reddy — Computer Science student specializing in Artificial Intelligence and Machine Learning at Aurora Deemed University. Founder of AS – Everything Starts Here & CAVORA DIGITAL.",
+    "Personal portfolio of Katta Ajith Reddy — software developer and Computer Science student specializing in Artificial Intelligence and Machine Learning. Founder of AS – Everything Starts Here and AS-WORKS.",
   keywords: [
     "Katta Ajith Reddy",
     "Ajith Reddy",
@@ -24,7 +24,8 @@ export const metadata: Metadata = {
     "AI Enthusiast",
     "Machine Learning",
     "AS Everything Starts Here",
-    "CAVORA DIGITAL",
+    "AS-WORKS",
+    "Digital Services",
     "Aurora Deemed University",
     "Next.js Portfolio",
     "TypeScript Developer",
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     url: "https://github.com/ajithreddy1608",
     title: "Katta Ajith Reddy | Developer | AI & ML Enthusiast | Founder",
     description:
-      "Hi, I'm Katta Ajith Reddy — Computer Science student specializing in AI & ML, software engineering, and founder of AS – Everything Starts Here & CAVORA DIGITAL.",
+      "Hi, I'm Katta Ajith Reddy — software developer and Computer Science student specializing in AI & ML, and founder of AS – Everything Starts Here and AS-WORKS.",
     siteName: "Katta Ajith Reddy Portfolio",
     images: [
       {

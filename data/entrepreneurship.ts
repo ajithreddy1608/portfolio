@@ -1,13 +1,17 @@
 export interface EntrepreneurshipInitiative {
   id: string;
   name: string;
+  subtitle: string;
   role: string;
-  tagline?: string;
+  category: string;
+  established?: string;
+  parentBrand?: string;
+  tagline: string;
+  philosophy?: string;
   logoPath: string;
-  websiteUrl?: string;
-  buttonText: string;
+  logoPresentation: "square" | "wide";
+  externalUrl: string;
   description: string;
-  keyFocusAreas?: string[];
   services?: string[];
   gradientTheme: {
     border: string;
@@ -19,25 +23,22 @@ export interface EntrepreneurshipInitiative {
 export const entrepreneurshipData = {
   sectionTitle: "Entrepreneurship & Leadership",
   sectionIntro:
-    "Beyond technology and development, I enjoy building ideas, creating brands, exploring business opportunities, and turning concepts into meaningful ventures. My entrepreneurial journey focuses on creativity, innovation, digital experiences, and execution.",
+    "Alongside my technical work, I am building through AS – Everything Starts Here and developing AS-WORKS as a digital services and creative studio.",
   initiatives: [
     {
       id: "as-everything-starts-here",
       name: "AS – Everything Starts Here",
+      subtitle: "Founder-led Parent Brand",
       role: "Founder",
+      category: "Parent Brand / Entrepreneurial Identity",
+      established: "2026",
+      tagline: "Everything Starts Here.",
+      philosophy: "Start with an idea. Build with intention. Grow with purpose.",
       logoPath: "/as-logo.png",
-      websiteUrl: "https://www.aseverythingstartshere.in/",
-      buttonText: "Visit Website",
+      logoPresentation: "square",
+      externalUrl: "https://www.instagram.com/as.thebeginning/",
       description:
-        "AS – Everything Starts Here is my founder-led personal brand and entrepreneurial initiative, built around the belief that every great journey begins with an idea. It represents my vision of exploring opportunities, building innovative concepts, developing meaningful ventures, and transforming ideas into reality.\n\nThrough AS, I aim to bring together creativity, technology, entrepreneurship, and personal growth under one vision: Everything Starts Here.",
-      keyFocusAreas: [
-        "Entrepreneurship & Venture Building",
-        "Personal Branding",
-        "Innovation & Idea Development",
-        "Business Strategy",
-        "Creative Projects & Experiments",
-        "Technology-Driven Initiatives",
-      ],
+        "AS – Everything Starts Here is a founder-led parent brand established in 2026 with the vision of building a diversified ecosystem of businesses, ideas and opportunities. It represents the starting point of ideas, the development of independent ventures and the journey of transforming possibilities into meaningful outcomes. AS is built around a long-term vision of entrepreneurship, creativity, innovation and intentional growth.",
       gradientTheme: {
         border: "border-blue-500/30 hover:border-blue-400/50",
         glow: "rgba(59, 130, 246, 0.2)",
@@ -45,20 +46,26 @@ export const entrepreneurshipData = {
       },
     },
     {
-      id: "cavora-digital",
-      name: "CAVORA DIGITAL",
+      id: "as-works",
+      name: "AS-WORKS",
+      subtitle: "Digital Services & Creative Studio",
       role: "Founder",
-      tagline: "Your Vision. Our Execution.",
-      logoPath: "/cavora-logo.png",
-      buttonText: "Explore Services",
+      category: "Digital Services / Business",
+      parentBrand: "AS – Everything Starts Here",
+      tagline: "DIGITAL · CREATIVE · GROWTH",
+      logoPath: "/as-works-logo.png",
+      logoPresentation: "wide",
+      externalUrl: "https://www.instagram.com/asworks.in/",
       description:
-        "CAVORA DIGITAL is my freelancing and digital services initiative, focused on helping businesses and individuals establish a strong digital presence. The brand aims to transform ideas into professional digital experiences through modern design, technology, and creative execution.\n\nMy vision is to deliver impactful digital solutions that help brands build, grow, and stand out in the digital world.",
+        "AS-WORKS is a digital services and creative venture focused on helping individuals, startups and businesses establish, strengthen and grow their digital presence. It combines creativity, technology and strategic execution to transform ideas into meaningful digital experiences. From website development and branding to digital marketing and AI-powered automation, AS-WORKS aims to deliver practical digital solutions that help businesses move forward.",
       services: [
         "Website Design & Development",
-        "UI/UX Design",
-        "Branding & Digital Identity",
-        "Digital Marketing",
-        "Creative Digital Solutions",
+        "Branding & Graphic Design",
+        "Social Media Management",
+        "Video Editing & Content Creation",
+        "Digital Marketing & SEO",
+        "Lead Generation",
+        "AI & Automation Services",
       ],
       gradientTheme: {
         border: "border-cyan-500/30 hover:border-cyan-400/50",

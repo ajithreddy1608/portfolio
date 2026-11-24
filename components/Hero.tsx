@@ -63,23 +63,22 @@ export default function Hero() {
                 Katta Ajith Reddy
               </h1>
               <p className="text-lg sm:text-xl font-semibold bg-gradient-to-r from-blue-400 via-cyan-300 to-indigo-300 bg-clip-text text-transparent">
-                Developer | AI &amp; ML Enthusiast | Technology Explorer
+                Software Developer | AI &amp; ML Enthusiast | Founder
               </p>
             </div>
 
             {/* Professional Introduction Statement */}
             <p className="text-slate-300 text-base sm:text-lg leading-relaxed mb-8 max-w-2xl font-normal">
               Hi, I&apos;m{" "}
-              <strong className="text-white font-medium">Katta Ajith Reddy</strong> — a
-              Computer Science student specializing in Artificial Intelligence and
-              Machine Learning, passionate about technology, software
-              development, intelligent systems and building meaningful digital
-              products.
+              <strong className="text-white font-medium">Katta Ajith Reddy</strong>,
+              a Computer Science student specializing in Artificial Intelligence
+              and Machine Learning. I build useful digital products and explore
+              technology through software development.
               <br />
               <br className="hidden sm:inline" />
-              I enjoy transforming ideas into practical applications, exploring
-              emerging technologies and continuously improving my technical skills
-              through real-world projects.
+              I am the founder of AS – Everything Starts Here and AS-WORKS,
+              focusing on entrepreneurship, creative execution and
+              technology-driven digital services.
             </p>
 
             {/* Primary Action Buttons */}
